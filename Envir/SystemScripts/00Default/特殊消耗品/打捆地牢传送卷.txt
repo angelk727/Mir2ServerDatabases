@@ -1,0 +1,9 @@
+;;打捆地牢传送卷
+[@_UseItem(61)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 地牢传送卷 6
+#ELSEACT
+GIVEITEM 打捆地牢传送卷 1
+LocalMessage "背包空间不足！！！" Hint

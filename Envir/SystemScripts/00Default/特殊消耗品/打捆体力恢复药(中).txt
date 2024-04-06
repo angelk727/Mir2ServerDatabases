@@ -1,0 +1,9 @@
+;;打捆体力恢复药(中)
+[@_UseItem(52)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 体力恢复药(中) 6
+#ELSEACT
+GIVEITEM 打捆体力恢复药(中) 1
+LocalMessage "背包空间不足！！！" Hint

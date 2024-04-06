@@ -1,0 +1,27 @@
+﻿[@Description]
+我也想回送一份礼物给{允熙/LimeGreen} 以表达我的感激
+但这会儿我实在是忙的不可开交
+能帮我个忙吗?
+
+[@TaskDescription]
+在 {稻草人/Crimson} 身上找到 {姜茶/LightSteelBlue}
+并交给{边界村/Yellow}的新手接待员{允熙/LimeGreen}
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+姜茶 1 
+
+[@CarryItems]
+
+[@FixedRewards]
+金项链
+
+[@SelectRewards]
+
+[@ExpReward]
+100
+
+[@GoldReward]

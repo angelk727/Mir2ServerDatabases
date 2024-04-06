@@ -1,0 +1,15 @@
+[@MAIN]
+#IF
+CHECKPKPOINT < 2
+#SAY
+与井中的倒影对话可以帮你解开封印，并传送到蛇王洞穴一层。
+<与倒影对话/@gosnakepre2>
+
+<离开/@exit>
+
+#ELSESAY
+你的品行无法解开封印咒语！
+
+[@gosnakepre2]
+#ACT
+MOVE snakepre2 273 248

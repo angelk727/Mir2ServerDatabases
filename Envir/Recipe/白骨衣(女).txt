@@ -1,0 +1,12 @@
+[Recipe]
+Amount 1
+Chance 98
+Gold 1000
+
+[Tools]
+
+[Ingredients]
+骨头 20
+轻型盔甲(女) 1
+铜矿 1
+蜘蛛网 20

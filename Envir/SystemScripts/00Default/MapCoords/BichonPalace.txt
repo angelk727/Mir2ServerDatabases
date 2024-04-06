@@ -1,0 +1,9 @@
+[@MAIN]
+{
+#IF
+CHECKQUEST 154 COMPLETE
+#ACT
+ENTERMAP
+#ELSEACT
+LocalMessage "[Commander Luke] 站住！你不能进来和我说话。" Hint
+}

@@ -1,0 +1,26 @@
+﻿[@Description]
+飞天县赏金任务：收集栗子
+
+[@TaskDescription]
+砍栗子树,收集5个{金栗子/LightSteelBlue}
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+金栗子 5
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+15000
+
+[@GoldReward]
+100000

@@ -1,0 +1,7 @@
+[@Main]
+#SAY
+ 
+ 
+沙巴克归属于：{<$CONQUESTOWNER(1)>/LightSteelBlue}
+ 
+提交攻城行会：{<$CONQUESTSCHEDULE(1)>/LightSteelBlue}

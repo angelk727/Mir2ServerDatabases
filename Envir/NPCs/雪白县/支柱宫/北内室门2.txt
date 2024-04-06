@@ -1,0 +1,4 @@
+[@MAIN]
+#IF
+#ACT
+MOVE iceland_DOWN_BOOK2 94 181

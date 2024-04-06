@@ -1,0 +1,15 @@
+[@Main]
+#IF
+LEVEL > 49
+#SAY
+要进入飞天县，做好准备前往了吗？
+
+<前往/@goBiqi>
+<离开/@exit>
+
+#ELSESAY
+一块神奇的石头,发出耀眼的光芒。
+
+[@goBiqi]
+#ACT
+MOVE 0 564 408

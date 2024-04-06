@@ -1,0 +1,25 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<Close/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+你好 <$USERNAME> 我是研究团长
+找我有什么事吗?
+ 
+<关闭/@exit>
+
+[Quests]
+-164
+165
+-168
+169
+-171
+172

@@ -1,0 +1,11 @@
+[Recipe]
+Amount 1
+Chance 100
+Gold 100
+
+[Tools]
+
+[Ingredients]
+骨头 1
+人参 1
+道力药水 1

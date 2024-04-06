@@ -1,0 +1,30 @@
+[@Description]
+狩猎 {咒魔术士/Crimson} 
+收集 {咒魔术士的杖/LightSteelBlue} 20把
+收集 {异常咒魔珠/LightSteelBlue} 20个
+用来研究法杖与珠子之间对法力增幅的原理
+
+[@TaskDescription]
+狩猎 {咒魔术士/Crimson} 收集 {咒魔术士的杖、异常咒魔珠/LightSteelBlue}
+与梦村县光辉团研究员交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+咒魔术士的杖 20
+异常咒魔珠 20
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+260000000
+
+[@GoldReward]

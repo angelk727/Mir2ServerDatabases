@@ -1,0 +1,5 @@
+[@MAIN]
+#IF
+#ACT
+MOVE iceland_DOWN_HALL 256 136
+

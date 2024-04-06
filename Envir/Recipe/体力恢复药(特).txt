@@ -1,0 +1,11 @@
+[Recipe]
+Amount 1
+Chance 100
+Gold 100
+
+[Tools]
+
+[Ingredients]
+乌木果实 1
+食人花叶子 1
+体力恢复药(大) 1

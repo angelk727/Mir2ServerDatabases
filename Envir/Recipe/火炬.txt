@@ -1,0 +1,12 @@
+[Recipe]
+Amount 1
+Chance 100
+Gold 100
+
+[Tools]
+
+[Ingredients]
+红线 1
+骨头 1
+蜡烛 1
+修复油 1

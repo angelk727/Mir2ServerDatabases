@@ -1,0 +1,37 @@
+[@Description]
+为了调查流淌神秘气息的 {咒魔神秘石/LightSteelBlue}
+从沙遗迹的
+ {咒魔术士/Crimson} 
+ {咒魔剑士/Crimson} 
+ {咒魔火弓师/Crimson} 
+ {咒魔风弓师/Crimson} 
+处搜寻100个 {咒魔神秘石/LightSteelBlue}
+
+[@TaskDescription]
+收集100个 {咒魔神秘石/LightSteelBlue}
+与梦村县光辉团研究员交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+咒魔神秘石 100
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+勇泉水
+绽泉水
+寒泉水
+淡泉水
+神泉水
+
+[@ExpReward]
+260000000
+
+[@GoldReward]

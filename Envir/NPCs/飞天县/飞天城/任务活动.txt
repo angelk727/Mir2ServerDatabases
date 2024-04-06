@@ -1,0 +1,111 @@
+[@MAIN]
+#SAY
+NPC脚本命令测试
+<投色子方式1/@TSZ1>---<投色子方式2/@TSZ2>---<回答问题输入测试/@MLCS1>
+<计时功能/@计时器>---<定时返回/@定时返回>
+<特效测试/@BUFFNEW>
+<结婚戒指/@WINNEW>
+<传送地图/@CSMAP>
+
+
+[@CSMAP]
+#ACT
+MOVE D5071
+
+[@定时返回]
+#SAY
+请输入一个整数时间，试验倒计时
+<输入时间/@@QUESTION>
+
+[@@QUESTION]
+#ACT
+MOV B1 %INPUTSTR
+TIMERECALL <$OUTPUT(B1)>
+LocalMessage "时间倒计时<$OUTPUT(B1)>秒 返回" Hint
+
+[@计时器]
+#SAY
+请输入一个整数时间，试验倒计时
+<输入时间/@@QUESTION1>
+<删除计时/@RemoveTime>
+
+[@@QUESTION1]
+#ACT
+MOV A1 %INPUTSTR
+SETTIMER TIME-20 <$OUTPUT(A1)> 1 
+EXPIRETIMER TIME
+LocalMessage "时间倒计时<$OUTPUT(A1)>秒" Hint
+
+[@RemoveTime]
+#ACT
+EXPIRETIMER TIME-20
+LocalMessage "时间计时器已删除" Hint
+
+[@TSZ1]
+#SAY
+<$ROLLRESULT>
+#ACT
+
+ROLLDIE @MAIN false
+
+[@TSZ2]
+#SAY
+<$ROLLRESULT>
+#ACT
+
+ROLLYUT  @MAIN  true
+
+[@MLCS1]
+#SAY
+你现在的游戏等级是?
+<回答问题/@@QUESTION>
+
+[@@QUESTION]
+#ACT
+MOV A1 %INPUTSTR
+LOCALMESSAGE "<$OUTPUT(A1)> 级对你来说很困难吗？" Hint
+
+[@BUFFNEW]
+#SAY
+你好！想测试什么呢？
+<增加特效/@TXHero>
+
+[@TXHero]
+#ACT
+REMOVEBUFF 变形效果
+REMOVEBUFF 经验丰富
+GIVEBUFF 经验丰富 20 50 
+GIVEBUFF 潜心修炼 20 50 TRUE FALSE FALSE
+LocalMessage "特效生成" Hint
+ 
+[@ReviveHero]
+#ACT
+ReviveHero
+
+[@SealHero]
+#ACT
+SealHero
+
+[@MANAGEHERO]
+#ACT
+MANAGEHERO
+
+[@WINNEW]
+<婚戒替换/@REPLACEWEDDINGRING>
+<制作婚戒/@HJSELLNEW>
+
+[@REPLACEWEDDINGRING]
+#SAY
+你好
+#ACT
+REPLACEWEDDINGRING
+
+[@HJSELLNEW]
+#ACT
+MakeWeddingRing
+
+[Types]
+
+
+[Trade]
+

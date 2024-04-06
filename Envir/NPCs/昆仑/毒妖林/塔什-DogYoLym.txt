@@ -1,0 +1,11 @@
+[@MAIN]
+#SAY
+进入毒妖村是件很危险的事，做好准备前往了吗？
+<前往/@goInDun_02DogYoArena>
+
+#ELSESAY
+我好像不能帮你什么！
+
+[@goInDun_02DogYoArena]
+#ACT
+MOVE InDun_02DogYoArena 36 92

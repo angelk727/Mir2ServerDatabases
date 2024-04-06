@@ -1,0 +1,6 @@
+[@Main]
+#SAY
+#ACT
+MOVE SG003 76 151
+BREAK
+CLOSE

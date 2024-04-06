@@ -1,0 +1,22 @@
+[@MAIN]
+#SAY
+需要我现在运用魔力送你回昆仑城吗?
+ 
+<<返回昆仑/@moveGonRyun>>
+<下次再来挑战/@EXIT> 
+
+
+[@moveGonRyun]
+#IF
+CHECKGOLD > 500
+#ACT
+MOVE GonRyun 224 240
+TAKEGOLD 500
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有足够的金币，不要浪费我的时间，快走吧!
+ 
+<关闭/@exit>

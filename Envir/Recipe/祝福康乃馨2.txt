@@ -1,0 +1,11 @@
+[Recipe]
+Amount 1
+Chance 48
+Gold 1500
+
+[Tools]
+
+[Ingredients]
+祝福康乃馨1 1
+祝福油 1
+

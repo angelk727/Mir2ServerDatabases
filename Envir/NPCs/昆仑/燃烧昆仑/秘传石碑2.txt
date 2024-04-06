@@ -1,0 +1,22 @@
+[@MAIN]
+#SAY
+返回燃烧昆仑的昆仑主楼吗?
+ 
+<<返回昆仑主楼/@move01MainHall>>
+<关闭/@EXIT> 
+
+
+[@move01MainHall]
+#IF
+CHECKGOLD > 5000
+#ACT
+MOVE Indun_01MainHall 49 38
+TAKEGOLD 5000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有5000金币，不要浪费我的时间，快走吧!
+ 
+<关闭/@EXIT> 

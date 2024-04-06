@@ -1,0 +1,77 @@
+﻿;;服务器测试卷
+[@_UseItem(1)]
+#INCLUDE [SystemScripts\00Default\TestServerScroll.txt] @Main
+
+;;PK点数清洗卷
+[@_UseItem(2)]
+#ACT
+REDUCEPKPOINT 100
+
+;;变性卷轴
+[@_UseItem(5)]
+#IF
+CHECKGENDER Male
+#ACT
+CHANGEGENDER
+LocalMessage "性别变为女性！请重新登录以生效" Hint
+#ELSEACT
+CHANGEGENDER
+LocalMessage "性别变为男性！请重新登录以生效" Hint
+
+;;100%爆率卷 24Hour
+[@_UseItem(6)]
+#ACT
+GIVEBUFF 潜心修炼 20  TRUE FALSE FALSE 
+LocalMessage "爆率增加 100% 持续一天" Hint
+
+;;深蓝六角盒
+[@_UseItem(7)]
+#ACT
+GIVEITEM EXP30%3 1
+GIVEITEM 鸡腿 1
+GIVEITEM 破坏圣水 1
+GIVEITEM 复活卷轴 1
+
+;;赤色六角盒
+[@_UseItem(8)]
+#ACT
+GIVEITEM EXP30%3 1
+GIVEITEM 鸡腿 1
+GIVEITEM 魔法圣水 1
+GIVEITEM 复活卷轴 1
+
+;;深绿六角盒
+[@_UseItem(9)]
+#ACT
+GIVEITEM EXP30%3 1
+GIVEITEM 鸡腿 1
+GIVEITEM 道术圣水 1
+GIVEITEM 复活卷轴 1
+
+[@_UseItem(10)]
+#ACT
+GIVEITEM 护身符 3000
+
+;;PK Point 中药
+[@_UseItem(11)]
+#ACT
+REDUCEPKPOINT 10
+LocalMessage "PK值降低了10点" Hint
+
+;;BoxOfHolyWater 1 Day
+[@_UseItem(12)]
+#ACT
+GIVEITEM ElixirOfMight[1d] 1
+GIVEITEM ElixirOfDefensive[1d] 1
+GIVEITEM ElixirOf千年雪霜[1d] 1
+GIVEITEM EXP20%[1d] 1
+
+;;渔具包
+[@_UseItem(13)]
+#ACT
+GIVEITEM 太公钓竿[6M] 1
+GIVEITEM 高级摇轮 1
+GIVEITEM 高级鱼漂 1
+GIVEITEM 高级探鱼器 1
+GIVEITEM 鱼钩 1
+GIVEITEM 高级鱼饵 3600

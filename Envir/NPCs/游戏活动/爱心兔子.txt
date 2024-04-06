@@ -1,0 +1,111 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我不会帮助像你这样邪恶的人...
+
+<关闭/@EXIT>
+#ELSEACT
+GOTO @MAIN-1
+
+[@MAIN-1]
+#SAY
+你好啊 玛法大陆的勇士：{<$USERNAME>/GREENYELLOW} ，
+我是 {<$NPCNAME>/GREENYELLOW} 想给父母制作个爱心的花环，但需要收集一些 {兔子草/SEAGREEN}
+做为回报我可帮你进入{春花之地/LightSeaGreen} {限时30分钟/LightSalmon}，能不能帮我这个忙呢？
+收集：家、和、万、事、成，在我这里兑换 {春天首饰盒/SEAGREEN}
+
+<<我要去春花之地/@MoveCHZD>> 
+<<兑换春天首饰盒/@ExchangeJHWSX>>
+<关闭/@EXIT>
+
+[@MoveCHZD]
+#IF
+CHECKITEM 兔子草 10
+#ACT
+MOV T1 1800
+TAKEITEM 兔子草 10
+GOTO @MoveCHZD-1
+#ELSESAY
+没有足够的兔子草，不能帮你传送到春花之地
+<关闭/@EXIT>
+
+[@MoveCHZD-1]
+#IF
+LEVEL <= 30
+#ACT
+TIMERECALL <$OUTPUT(T1)>
+MOVE 2022_flower1
+SETTIMER TIME-CHZD <$OUTPUT(T1)> 0 
+EXPIRETIMER TIME
+LocalMessage "进入春花之地时间为: <$OUTPUT(T1)> 秒" Hint
+#ELSEACT
+GOTO @MoveCHZD-2
+
+[@MoveCHZD-2]
+#IF
+LEVEL > 30
+LEVEL <= 50
+#ACT
+TIMERECALL <$OUTPUT(T1)>
+MOVE 2022_flower2
+SETTIMER TIME-CHZD <$OUTPUT(T1)> 0 
+EXPIRETIMER TIME
+LocalMessage "进入春花之地时间为: <$OUTPUT(T1)> 秒" Hint
+#ELSEACT
+GOTO @MoveCHZD-3
+
+[@MoveCHZD-3]
+#IF
+LEVEL > 50
+LEVEL <= 56
+#ACT
+TIMERECALL 1800
+MOVE 2022_flower3
+#ELSEACT
+GOTO @MoveCHZD-4
+
+[@MoveCHZD-4]
+#IF
+LEVEL > 56
+LEVEL <= 64
+#ACT
+TIMERECALL 1800
+MOVE 2022_flower4
+#ELSEACT
+GOTO @MoveCHZD-51
+
+[@MoveCHZD-51]
+#IF
+LEVEL > 64
+LEVEL <= 80
+#ACT
+TIMERECALL 1800
+MOVE 2022_flower5_1
+#ELSEACT
+GOTO @MoveCHZD-52
+
+[@MoveCHZD-52]
+#IF
+LEVEL > 80
+#ACT
+TIMERECALL 1800
+MOVE 2022_flower5_2
+
+[@ExchangeJHWSX]
+#IF
+CHECKITEM 家 1
+CHECKITEM 和 1
+CHECKITEM 万 1
+CHECKITEM 事 1
+CHECKITEM 成 1
+#ACT
+TAKEITEM 家 1
+TAKEITEM 和 1
+TAKEITEM 万 1
+TAKEITEM 事 1
+TAKEITEM 成 1
+GIVEITEM 春天首饰盒 1
+#ELSESAY
+兑换材料不足，需收集：家、和、万、事、成。
+<返回/@MAIN-1>

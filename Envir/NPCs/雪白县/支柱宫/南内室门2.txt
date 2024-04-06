@@ -1,0 +1,4 @@
+[@MAIN]
+#IF
+#ACT
+MOVE iceland_DOWN_room1 134 182

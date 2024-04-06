@@ -1,0 +1,25 @@
+[@Description]
+为了调查梦村县 {沙遗迹/Yellow} 的异常气息
+前往 {梦村县/Yellow} 寻找 {光辉团研究员/LimeGreen}
+
+[@TaskDescription]
+与梦村县光辉团研究员交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

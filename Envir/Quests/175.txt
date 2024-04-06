@@ -1,0 +1,26 @@
+[@Description]
+为了准备前往本国
+向 {夔龙城/Yellow} 的 {光辉团长/LimeGreen} 递交完成报告
+
+[@TaskDescription]
+与夔龙城的光辉团长交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+圣水箱子
+
+[@ExpReward]
+330000000
+
+[@GoldReward]

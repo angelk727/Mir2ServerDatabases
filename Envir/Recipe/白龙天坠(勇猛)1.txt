@@ -1,0 +1,10 @@
+﻿[Recipe]
+Amount 1
+Chance 100
+Gold 5000
+
+[Tools]
+
+[Ingredients]
+白龙天坠(勇猛) 1
+雪太狼的尖牙 1

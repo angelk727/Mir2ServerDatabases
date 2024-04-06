@@ -1,0 +1,31 @@
+[@Description]
+去 {沙遗迹 /Yellow} 调查杀厉鬼、太古鼠、大蟒的增长情况
+并向夔龙城光辉团长报告
+
+[@TaskDescription]
+消灭
+25只 {杀厉鬼/Crimson} 
+25只 {太古鼠/Crimson}
+25只 {大蟒/Crimson} 
+
+[@Completion]
+
+[@KillTasks]
+杀厉鬼 25
+太古鼠 25
+大蟒 25
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+150000000
+
+[@GoldReward]

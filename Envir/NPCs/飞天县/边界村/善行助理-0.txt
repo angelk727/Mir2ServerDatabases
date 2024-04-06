@@ -1,0 +1,29 @@
+[@Main]
+#SAY
+当前悬赏名单：
+                    
+                    ===特别赏金===
+                    <新手公会招募/@NR1> {Level1~25/KHAKI}
+
+
+[@NR1]
+#IF
+LEVEL <= 25
+#ACT
+GOTO @NR2
+#ELSESAY
+ <$USERNAME>, 你已超出新手公会招募等级！！！
+ 
+<返回/@Main>
+
+[@NR2]
+#IF
+INGUILD
+#SAY
+<$USERNAME>,你目前已在公会中
+如果想加募请先离开公会。
+
+#ELSEACT
+AddToGuild NewbieGuild
+ADDNAMELIST ../NameLists/NewbieGuild.txt
+LocalMessage "恭喜你，你已经加入了新的公会" Hint

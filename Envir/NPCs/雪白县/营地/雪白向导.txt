@@ -1,0 +1,90 @@
+[@Main]
+#SAY
+<免费营地传送/@main-1> 到营地内各个商店附近
+<收费野外传送/@main-2> 野外进出地点附近
+
+[@main-1]
+#SAY
+<武器店/@go-weap>   <服装店/@go-cloth>   <药杂店/@go-access>   
+<首饰店/@go-pot>   <书店/@go-book>      <仓库/@go-Storage>
+
+<关闭/@Exit>
+ 
+[@go-weap]
+#ACT
+MOVE whitevillage 286 234
+
+
+[@go-cloth]
+#ACT
+MOVE whitevillage 279 242
+
+
+[@go-access]
+#ACT
+MOVE whitevillage 329 237
+
+
+[@go-pot]
+#ACT
+MOVE whitevillage 270 248
+
+
+[@go-book]
+#ACT
+MOVE whitevillage 334 248
+
+[@go-Storage]
+#ACT
+MOVE WhiteVillage 312 278
+
+[@main-2]
+#SAY
+你想去哪里?
+前往: <渔具店/@go-YWYJ>   {(5000 Gold)/GOLD}
+前往: <冰川/@go-YWBC>    {(5000 Gold)/GOLD}
+前往: <神穿鬼路/@go-YWSCGL>    {(5000 Gold)/GOLD}
+前往: <雪人洞窟/@go-YWXRDK>    {(7000 Gold)/GOLD}
+<关闭/@Exit>
+
+[@go-YWYJ]
+#IF
+CHECKGOLD > 5000
+#ACT
+MOVE whitevillage 75 122
+TAKEGOLD 5000
+#ELSEACT
+GOTO @B1
+
+[@go-YWBC]
+#IF
+CHECKGOLD > 5000
+#ACT
+MOVE whitevillage 55 32
+TAKEGOLD 5000
+#ELSEACT
+GOTO @B1
+
+[@go-YWSCGL]
+#IF
+CHECKGOLD > 5000
+#ACT
+MOVE whitevillage 446 377
+TAKEGOLD 5000
+#ELSEACT
+GOTO @B1
+
+[@go-YWXRDK]
+#IF
+CHECKGOLD > 7000
+#ACT
+MOVE whitevillage 467 38
+TAKEGOLD 7000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有足够的 {金币/Gold} 来使用此项服务!
+不要浪费我的时间，快走吧!
+<关闭/@exit>

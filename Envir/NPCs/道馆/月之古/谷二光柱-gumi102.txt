@@ -1,0 +1,14 @@
+[@Main]
+#IF
+#SAY
+石柱上闪光的咒语能帮你到达月之圣殿左室
+<念动咒语/@guzwai201>
+
+<离开/@exit>
+
+#ELSESAY
+这块石头铭刻一段神秘的咒语！
+
+[@guzwai201]
+#ACT
+MOVE gumi201 20 125

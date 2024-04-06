@@ -1,0 +1,6 @@
+[@Main]
+#SAY
+#ACT
+MOVE SG004 227 41
+BREAK
+CLOSE

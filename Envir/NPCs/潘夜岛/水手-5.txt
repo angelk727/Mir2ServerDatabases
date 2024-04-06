@@ -1,0 +1,32 @@
+[@main]
+#SAY
+可以在我这里坐船前往
+前往飞天县费用: 5,000 {Gold/Gold}
+前往片木岛费用: 15,000 {Gold/Gold}
+ 
+<<前往飞天县/@brdmove>>
+<<前往片木岛/@MovePeunmokdo>>
+<离开/@EXIT>
+
+[@brdmove]
+#IF
+CHECKGOLD > 5000
+#ACT
+TAKEGOLD 5000
+MOVE 0 252 674
+#ELSESAY
+你没有足够的 {Gold/Gold} 来支付此项服务!
+别浪费我的时间，快走吧!
+<离开/@EXIT>
+
+[@MovePeunmokdo]
+#IF
+CHECKGOLD > 15000
+#ACT
+TAKEGOLD 15000
+MOVE peunmokdo 224 138
+#ELSESAY
+你没有足够的 {Gold/Gold} 来支付此项服务!
+别浪费我的时间，快走吧!
+<离开/@EXIT>
+

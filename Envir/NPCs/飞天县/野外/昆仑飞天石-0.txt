@@ -1,0 +1,15 @@
+[@Main]
+#IF
+LEVEL > 49
+#SAY
+要进入昆仑圣地，做好准备前往了吗？
+
+<前往/@goGonRyun>
+<离开/@exit>
+
+#ELSESAY
+一块神奇的石头,发出耀眼的光芒。
+
+[@goGonRyun]
+#ACT
+MOVE GonRyun 271 143

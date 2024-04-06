@@ -1,0 +1,9 @@
+;;筹码包
+[@_UseItem(62)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 筹码 6
+#ELSEACT
+GIVEITEM 筹码包 1
+LocalMessage "背包空间不足！！！" Hint

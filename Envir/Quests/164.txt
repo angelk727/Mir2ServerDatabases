@@ -1,0 +1,25 @@
+[@Description]
+去拜访持有宝石的 {夔龙城/Yellow}  {研究团长/LimeGreen}
+确认珠子与碎片的关系
+
+[@TaskDescription]
+与夔龙城的研究团长交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

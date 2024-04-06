@@ -1,0 +1,44 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<关闭/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+你好 我叫马库尔！
+专业从事冰川地形地貌的研究，最近和助手巴托尔发现
+这里的支柱地宫，旁边的地坑便可进入地宫。
+要进地宫探险吗？需要的话我可以帮助你
+
+进入 <支柱地宫/@ZZDGtele>
+<下次再来/@exit> 
+
+[@ZZDGtele]
+#SAY
+确认进入支柱地宫?
+ 
+进入 <支柱地宫/@moveZZDG1> {(100000 Gold)/GOLD}
+
+[@moveZZDG1]
+#IF
+CHECKGOLD > 100000
+#ACT
+MOVE iceland_DOWN_room2 116 172
+TAKEGOLD 100000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有足够的 {金币/Gold} !
+不要浪费我的时间，快走吧!
+
+<关闭/@exit>
+
+[Quests]

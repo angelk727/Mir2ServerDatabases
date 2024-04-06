@@ -1,0 +1,42 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<关闭/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+你好，我是地狱道的船夫。
+前面就是火之河，需要我的帮助吗？
+
+我想渡过 <火之河/@DHtele>
+<下次再来/@exit> 
+
+[@DHtele]
+#SAY
+确认到河对岸?
+ 
+渡过 <火之河/@moveHZH1> {(500000 Gold)/GOLD}
+
+[@moveHZH1]
+#IF
+CHECKGOLD > 500000
+#ACT
+MOVE hell03 241 70
+TAKEGOLD 500000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有足够的 {金币/Gold} !
+不要浪费我的时间，快走吧!
+
+<关闭/@exit>
+
+[Quests]

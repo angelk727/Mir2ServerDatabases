@@ -1,0 +1,30 @@
+[@Description]
+There seem's tobe a pattern to the Scyther..
+Maybe someone in {CastleBichon/Yellow} can scyther the
+ancient symbols.
+
+[@TaskDescription]
+Return to {CastleBichon/Yellow} Enquire about the symbols.
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+533 "向图书馆询问"
+534 "到客栈询问"
+535 "终于明白镰刀是怎么工作的了"
+536 "回到奥马洞穴的神秘石"
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+3900
+
+[@GoldReward]

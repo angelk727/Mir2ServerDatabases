@@ -1,0 +1,9 @@
+[@MAIN]
+{
+#IF
+CHECKPKPOINT > 199
+#ACT
+ENTERMAP
+#ELSEACT
+LocalMessage "一股神秘的邪恶力量似乎在要把你推倒。" Hint
+}

@@ -1,0 +1,285 @@
+;;高级藏宝图
+[@_UseItem(22)]
+#IF
+RANDOM 580
+#ACT
+GIVEITEM 破凰天魔衣(男)1 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 580
+#ACT
+GIVEITEM 破凰天魔衣(女)1 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(男)1 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(女)1 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(男)2 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(女)2 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(男)3 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(女)3 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(男)4 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(女)4 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(男)5 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 520
+#ACT
+GIVEITEM 监视者铠甲(女)5 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 360
+#ACT
+GIVEITEM 灵晶甲胄(男) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 360
+#ACT
+GIVEITEM 灵晶甲胄(女) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 350
+#ACT
+GIVEITEM 鹤羽圣衣(男) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 350
+#ACT
+GIVEITEM 鹤羽圣衣(女) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 340
+#ACT
+GIVEITEM 青之魔甲(男) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 340
+#ACT
+GIVEITEM 青之魔甲(女) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 320
+#ACT
+GIVEITEM 绿之魔甲(男) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 320
+#ACT
+GIVEITEM 绿之魔甲(女) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 330
+#ACT
+GIVEITEM 赤之魔甲(男) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 330
+#ACT
+GIVEITEM 赤之魔甲(女) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 330
+#ACT
+GIVEITEM 黑虎甲胄(男) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 310
+#ACT
+GIVEITEM 黑虎甲胄(女) 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 310
+#ACT
+GIVEITEM 黑铁头盔 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 180
+#ACT
+GIVEITEM 英雄头盔 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 220
+#ACT
+GIVEITEM 通天冠 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 250
+#ACT
+GIVEITEM 血龙头盔 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 260
+#ACT
+GIVEITEM 金萤帽 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 250
+#ACT
+GIVEITEM 贤人帽 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 240
+#ACT
+GIVEITEM 青铜腰带 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 130
+#ACT
+GIVEITEM 钢铁腰带 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 240
+#ACT
+GIVEITEM 金刚腰带 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 230
+#ACT
+GIVEITEM 蛟龙腰带 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 380
+#ACT
+GIVEITEM 血龙腰带 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 120
+#ACT
+GIVEITEM 避魂靴 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 240
+#ACT
+GIVEITEM 赤鳞靴 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 330
+#ACT
+GIVEITEM 血龙长靴 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 340
+#ACT
+GIVEITEM 雾隐遁靴 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#IF
+RANDOM 280
+#ACT
+GIVEITEM 白虎避难靴 1
+LocalMessage "恭喜" Hint
+BREAK
+
+#ELSEACT
+LocalMessage "很遗憾！什么都没得到。" Hint
+

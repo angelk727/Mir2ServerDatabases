@@ -1,0 +1,109 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+<关闭/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+ {你好，请选择喜欢的发型/PINK}
+
+<发型Ⅰ/@FXGGA0>   <发型Ⅱ/@FXGGA1>   <发型Ⅲ/@FXGGA2>
+<发型Ⅳ/@FXGGA3>   <发型Ⅴ/@FXGGA4>  <发型Ⅵ/@FXGGA5>
+<发型Ⅶ/@FXGGA6>   <发型Ⅷ/@FXGGA7>  <发型Ⅸ/@FXGGA8>  
+
+<不更换发型/@Exit>
+
+[@FXGGA0]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 0
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA1]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 1
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA2]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 2
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA3]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 3
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA4]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 4
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA5]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 5
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA6]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 6
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA7]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 7
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>
+
+[@FXGGA8]
+#IF
+CHECKGOLD > 50000
+#ACT
+CHANGEHAIR 8
+TAKEGOLD 50000
+#ELSESAY
+你没有足够的金币，有了再来找我吧
+<返回/@Main>

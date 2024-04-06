@@ -1,0 +1,11 @@
+﻿[Recipe]
+Amount 1
+Chance 100
+Gold 100
+
+[Tools]
+
+[Ingredients]
+虫腿 1
+食人花果实 3
+太阳水 1

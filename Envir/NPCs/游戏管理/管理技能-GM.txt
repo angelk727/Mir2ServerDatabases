@@ -1,0 +1,291 @@
+[@Main]
+#SAY
+你好{<$USERNAME>/KHAKI}, 我是{<$NPCNAME>/KHAKI}
+ 
+<<购买技能书/@Buy>>
+<<卖出技能书/@Sell>>
+<<人物学习技能/@ManJN>>
+ 
+[@ManJN]
+#SAY
+学习本职业所有技能 
+<<战士/@Warrior>>
+<<法师/@Wizard>> 
+<<道士/@Taoist>>
+<<弓箭/@Archer>> 
+<<刺客/@Assassin>>
+
+[@Sell]
+#SAY
+卖
+ 
+<返回/@Main>
+
+[@Buy]
+#SAY
+买
+ 
+<返回/@Main>
+
+[@Warrior]
+#IF
+CHECKCLASS 战士
+#ACT
+GIVESKILL 1 3
+GIVESKILL 2 3
+GIVESKILL 3 3
+GIVESKILL 4 3
+GIVESKILL 5 3
+GIVESKILL 6 3
+GIVESKILL 7 3
+GIVESKILL 8 3
+GIVESKILL 9 3
+GIVESKILL 10 3
+GIVESKILL 11 3
+GIVESKILL 12 3
+GIVESKILL 13 3
+GIVESKILL 14 3
+GIVESKILL 15 3
+GIVESKILL 16 3
+GIVESKILL 17 3
+
+#ELSEACT
+LocalMessage "你的职业不是战士" Hint
+
+[@Wizard]
+#IF
+CHECKCLASS 法师
+#ACT
+GIVESKILL 31 3
+GIVESKILL 32 3
+GIVESKILL 33 3
+GIVESKILL 34 3
+GIVESKILL 35 3
+GIVESKILL 36 3
+GIVESKILL 37 3
+GIVESKILL 38 3
+GIVESKILL 39 3
+GIVESKILL 40 3
+GIVESKILL 41 3
+GIVESKILL 42 3
+GIVESKILL 43 3
+GIVESKILL 44 3
+GIVESKILL 45 3
+GIVESKILL 46 3
+GIVESKILL 47 3
+GIVESKILL 48 3
+GIVESKILL 49 3
+GIVESKILL 50 3
+GIVESKILL 51 3
+GIVESKILL 52 3
+GIVESKILL 53 3
+GIVESKILL 55 3
+GIVESKILL 56 3
+GIVESKILL 57 3
+GIVESKILL 58 3
+
+#ELSEACT
+LocalMessage "你的职业不是法师" Hint
+
+[@Taoist]
+#IF
+CHECKCLASS 道士
+#ACT
+GIVESKILL 61 3
+GIVESKILL 62 3
+GIVESKILL 63 3
+GIVESKILL 64 3
+GIVESKILL 65 3
+GIVESKILL 67 3
+GIVESKILL 68 3
+GIVESKILL 69 3
+GIVESKILL 70 3
+GIVESKILL 71 3
+GIVESKILL 72 3
+GIVESKILL 73 3
+GIVESKILL 74 3
+GIVESKILL 75 3
+GIVESKILL 76 3
+GIVESKILL 77 3
+GIVESKILL 78 3
+GIVESKILL 79 3
+GIVESKILL 80 3
+GIVESKILL 81 3
+GIVESKILL 82 3
+GIVESKILL 83 3
+GIVESKILL 84 3
+GIVESKILL 85 3
+GIVESKILL 86 3
+GIVESKILL 87 3
+
+#ELSEACT
+LocalMessage "你的职业不是道士" Hint
+
+[@Assassin]
+#IF
+CHECKCLASS 刺客
+#ACT
+GIVESKILL 91 3
+GIVESKILL 92 3
+GIVESKILL 93 3
+GIVESKILL 94 3
+GIVESKILL 95 3
+GIVESKILL 96 3
+GIVESKILL 97 3
+GIVESKILL 98 3
+GIVESKILL 99 3
+GIVESKILL 100 3
+GIVESKILL 101 3
+GIVESKILL 102 3
+GIVESKILL 103 3
+GIVESKILL 104 3
+GIVESKILL 105 3
+GIVESKILL 106 3
+GIVESKILL 107 3
+
+#ELSEACT
+LocalMessage "你的职业不是刺客" Hint
+
+[@Archer]
+#IF
+CHECKCLASS 弓箭
+#ACT
+GIVESKILL 121 3 
+GIVESKILL 122 3
+GIVESKILL 123 3
+GIVESKILL 124 3
+GIVESKILL 125 3
+GIVESKILL 126 3
+GIVESKILL 127 3
+GIVESKILL 128 3
+GIVESKILL 129 3
+GIVESKILL 130 3
+GIVESKILL 131 3
+GIVESKILL 132 3
+GIVESKILL 133 3
+GIVESKILL 134 3
+GIVESKILL 135 3
+GIVESKILL 136 3
+GIVESKILL 137 3
+GIVESKILL 138 3
+GIVESKILL 139 3
+GIVESKILL 140 3
+GIVESKILL 141 3
+
+#ELSEACT
+LocalMessage "你的职业不是弓箭" Hint
+
+[Types]
+20
+
+[Trade]
+基本剑术
+攻杀剑术
+刺杀剑术
+半月弯刀
+野蛮冲撞
+双龙斩
+捕绳剑
+烈火剑法
+狮子吼
+狂风斩
+空破闪
+护身气幕
+剑气爆
+天务
+日闪
+血龙剑法
+金刚不坏
+火球术
+抗拒火环
+诱惑之光
+大火球
+地狱火
+雷电术
+瞬息移动
+爆裂火焰
+火墙
+疾光电影
+寒冰掌
+地狱雷光
+魔法盾
+圣言术
+嗜血术
+冰咆哮
+灭天火
+分身术
+火龙气焰
+天霜冰环
+深延术
+天上落焰
+冰焰术
+雷仙风
+天上秘术
+大火球-秘籍
+雷仙风-秘籍
+时光涌动
+治愈术
+精神力战法
+施毒术
+灵魂火符
+召唤骷髅
+隐身术
+集体隐身术
+幽灵盾
+心灵启示
+神圣战甲术
+气功波
+困魔咒
+净化术
+群体治疗术
+迷魂术
+无极真气
+召唤神兽
+苏生术
+精魂召唤术
+诅咒术
+烦恼
+毒雾
+先天气功
+血龙水
+阴阳五行阵
+阴阳五行阵-秘籍
+治愈术-秘籍
+绝命剑法
+风剑术
+体迅风
+拔刀术
+风身术
+迁移剑
+烈风击
+捕缚术
+猛毒剑气
+月影术
+吸气
+轻身步
+烈火身
+血风击
+猫舌兰
+月影雾
+传送门
+必中闪
+天日闪
+精神状态
+无我闪
+气功术
+万斤闪
+爆阱
+气流术
+吸血地闪
+吸血地精
+风弹步
+爆闪
+金刚术
+地柱钉
+痹魔阱
+毒魔闪
+邪爆闪
+蛇柱阱
+血龙闪
+血龙闪秘笈
+困兽笼

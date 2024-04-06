@@ -1,0 +1,42 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<关闭/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+你好 我叫郭奇缘！
+要进入联盟之门吗？需要的话我可以帮助你
+
+进入 <联盟之门/@KLLMZMen>
+<下次再来/@exit> 
+
+[@KLLMZMen]
+#SAY
+确认进入联盟之门?
+ 
+进入 <联盟之门/@moveKLLMZMen> {(1000 Gold)/GOLD}
+
+[@moveKLLMZMen]
+#IF
+CHECKGOLD > 1000
+#ACT
+MOVE UNIONGUILD 24 45
+TAKEGOLD 1000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有足够的 {金币/Gold} !
+不要浪费我的时间，快走吧!
+
+<关闭/@exit>
+
+[Quests]

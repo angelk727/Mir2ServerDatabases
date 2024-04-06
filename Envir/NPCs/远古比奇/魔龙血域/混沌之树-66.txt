@@ -1,0 +1,27 @@
+[@MAIN]
+#IF
+CHECKITEM 龙鳞 1 
+#ACT
+GOTO @MAIN-1
+#ELSEACT
+GOTO @MAIN-2
+[@MAIN-1]
+#SAY
+是否要进入龙之巢穴？
+<<进入龙之巢穴/@TELE66>>
+<关闭/@EXIT>
+[@MAIN-2]
+#SAY
+你好旅行者，欢迎你的到访！
+我的大脑裸漏在空气中需要一些 {龙鳞/LightSteelBlue} 用来保护，你能帮我找一些吗？
+做为回报可将你传送到 {龙之巢穴/MediumSeaGreen} 以示感谢!
+<关闭/@EXIT>
+[@TELE66]
+#IF
+CHECKITEM 龙鳞 1 
+#ACT
+TAKEITEM 龙鳞 1
+#ACT
+MOVE D2081 30 50
+#ELSEACT
+GOTO @MAIN-2

@@ -1,0 +1,16 @@
+[@MAIN]
+#SAY
+一座石柱，上面写着 "敢进来的人会死"
+  
+<抚摸石柱/@move1>
+ 
+<关闭/@exit>
+
+[@move1]
+#IF
+CHECKEXACTMON 青神石魔 >= 1 SnowCave_BOSS
+#ACT
+MOVE SnowCave_BOSS 30 37
+LocalMessage "[青神石魔] 胆敢进入我的巢穴。都将痛苦地死去！" Shout
+#ELSEACT
+MOVE SnowCave_BOSS 30 37

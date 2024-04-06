@@ -1,0 +1,12 @@
+[@MAIN]
+#SAY
+我在这隐藏了很久，想离开这里吗？
+<离开/@goDogYoLym>
+
+
+#ELSESAY
+我好像不能帮你什么！
+
+[@goDogYoLym]
+#ACT
+MOVE DogYoLym 275 22

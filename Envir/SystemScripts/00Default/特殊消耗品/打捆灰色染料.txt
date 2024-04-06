@@ -1,0 +1,9 @@
+;;打捆灰色染料
+[@_UseItem(65)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 灰色染料 6
+#ELSEACT
+GIVEITEM 打捆灰色染料 1
+LocalMessage "背包空间不足！！！" Hint

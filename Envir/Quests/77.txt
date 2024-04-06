@@ -1,0 +1,24 @@
+﻿[@Description]
+请帮向我的父亲{英勇/LimeGreen}复命,
+他是{梦村土城/Yellow}仓库二层的管理员
+
+[@TaskDescription]
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@CarryItems]
+旧法袍 1
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+3794
+
+[@GoldReward]
+4200

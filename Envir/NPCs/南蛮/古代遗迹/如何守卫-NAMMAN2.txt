@@ -1,0 +1,15 @@
+[@Main]
+#SAY
+旅行者！很高兴能在古代遗迹见到你！
+前方洞口是如何神殿入口，可惜已经坍塌很久了！
+我负责守卫如何神殿入口附近的安全，并防止怪物逃逸
+进入: <如何神殿1层/@MOVEYEOHA01> {(8000 Gold)/GOLD}
+
+[@MOVEYEOHA01]
+#IF
+CHECKGOLD > 8000
+#ACT
+MOVE YEOHA01 276 276
+TAKEGOLD 8000
+#ELSESAY
+金币不足，不能帮你完成传送

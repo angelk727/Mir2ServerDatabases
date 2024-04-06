@@ -1,0 +1,9 @@
+;;打捆回城卷
+[@_UseItem(58)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 回城卷 6
+#ELSEACT
+GIVEITEM 打捆回城卷 1
+LocalMessage "背包空间不足！！！" Hint

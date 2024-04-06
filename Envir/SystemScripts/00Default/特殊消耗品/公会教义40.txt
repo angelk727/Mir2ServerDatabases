@@ -1,0 +1,9 @@
+;;公会教义40
+[@_UseItem(18)]
+#IF
+INGUILD
+#ACT
+GiveGuildExp 400
+LocalMessage "公会经验增加400点。" Hint
+#ELSEACT
+LocalMessage "未加入公会，使用物品无效且消失！" Hint

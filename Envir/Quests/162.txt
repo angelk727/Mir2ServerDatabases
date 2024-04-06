@@ -1,0 +1,24 @@
+[@Description]
+将光辉团长的指令转达给 {梦村县/Yellow} 的光辉团 {研究员/LimeGreen}
+
+[@TaskDescription]
+与梦村县光辉团研究员交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

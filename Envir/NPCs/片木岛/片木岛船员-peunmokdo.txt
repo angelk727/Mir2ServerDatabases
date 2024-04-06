@@ -1,0 +1,18 @@
+[@MAIN]
+#SAY
+如果你想返回潘夜岛，可以在我这里坐船前往
+ 
+<返回潘夜岛/@CYDmove> 支付 5,000 {Gold/Gold} 费用
+<离开/@EXIT>
+
+[@CYDmove]
+#IF
+CHECKGOLD > 5000
+#ACT
+TAKEGOLD 5000
+MOVE 5 125 354
+#ELSESAY
+你没有足够的 {Gold/Gold} 来支付此项服务!
+别浪费我的时间，快走吧!
+<离开/@EXIT>
+

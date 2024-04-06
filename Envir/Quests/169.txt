@@ -1,0 +1,25 @@
+[@Description]
+拜访 {梦村县/Yellow} 光辉团 {研究员/LimeGreen}
+再次调查沙遗迹内部
+
+[@TaskDescription]
+与梦村县光辉团研究员交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

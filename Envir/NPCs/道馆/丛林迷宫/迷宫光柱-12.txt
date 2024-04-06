@@ -1,0 +1,14 @@
+[@Main]
+#IF
+#SAY
+石柱上闪光的咒语能帮你到达月之谷
+<念动咒语/@guwai12>
+
+<离开/@exit>
+
+#ELSESAY
+这块石头铭刻一段神秘的咒语！
+
+[@guwai12]
+#ACT
+MOVE gumi101 178 180

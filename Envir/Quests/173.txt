@@ -1,0 +1,25 @@
+[@Description]
+前往本国出发前，接受的最终考验吧！
+拜访 {沙遗迹/Yellow} 的光辉团部长 {郭圭/LimeGreen}
+
+[@TaskDescription]
+与沙遗迹的光辉团部长交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

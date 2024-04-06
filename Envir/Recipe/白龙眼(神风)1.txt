@@ -1,0 +1,10 @@
+﻿[Recipe]
+Amount 1
+Chance 100
+Gold 5000
+
+[Tools]
+
+[Ingredients]
+白龙眼(神风) 1
+雪太狼的尖牙 1

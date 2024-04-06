@@ -1,0 +1,25 @@
+﻿[@Description]
+哦,你好旅行者
+不知道你有没有去过 {梦村土城/Yellow}
+他们现在需要一些帮助
+
+[@TaskDescription]
+与 {梦村土城/Yellow} 的 {甄叔/LimeGreen} 交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+25340
+
+[@GoldReward]
+47500

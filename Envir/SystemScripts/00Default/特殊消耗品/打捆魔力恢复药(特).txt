@@ -1,0 +1,10 @@
+;;打捆魔力恢复药(特)
+[@_UseItem(57)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 魔力恢复药(特) 6
+#ELSEACT
+GIVEITEM 打捆魔力恢复药(特) 1
+LocalMessage "背包空间不足！！！" Hint
+BREAK

@@ -1,0 +1,390 @@
+[@Main]
+{
+#IF
+CHECKITEM 服务器测试书卷 1
+#ACT
+GOTO @Main-1
+#ELSEACT
+GIVEITEM 服务器测试书卷 1
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+欢迎您登录本服务器
+谢谢您参与测试
+ 
+;;<<游戏命令/@GCommands>> 
+<<游戏地图/@TownCaves>>
+
+[@TownCaves]
+#SAY
+<<管理员地图/@MapOfGM>>
+<<飞天县/@GMBichon>>
+<<沃玛森林/@GMWoomyon>>
+<<石槽矿山/@GMUMM>>
+<<夔龙城/@GMCastle>>
+<<道馆/@GMTaoVillage>>
+<<毒蛇山谷/@GMSerpent>>
+<<梦村县/@GMMongchon>>
+<<潘夜岛/@GMPrajna>>
+<<远古比奇/@GMPastBichon>>
+<<南蛮/@GMNAMMAN>>
+<<雪白县/@GMWhitevillage>>
+<<昆仑城/@GMGonRyun>>
+<返回/@_UseItem(1)>
+
+[@GMGonRyun]
+#SAY
+<<昆仑城/@GMGonRyunSZ>>
+<<毒妖林入口/@GMDogYoLymSZ>>
+<<昆仑谷东入口/@GMGonRyunV0ESZ>>
+<<昆仑谷南入口/@GMGonRyunV0SSZ>>
+<返回/@_UseItem(1)>
+
+[@GMGonRyunSZ]
+#ACT
+MOVE GonRyun 265 283
+CLOSE
+
+[@GMDogYoLymSZ]
+#ACT
+MOVE GonRyun 775 33
+CLOSE
+
+[@GMGonRyunV0ESZ]
+#ACT
+MOVE GonRyun 768 638
+CLOSE
+
+[@GMGonRyunV0SSZ]
+#ACT
+MOVE GonRyun 672 771
+CLOSE
+
+[@GMWhitevillage]
+#SAY
+<<雪白县/@GMWhitevillageSZ>>
+<<雪人洞窟入口/@GMSnowcaveSZ>>
+<<冰川入口/@GMIcelandSZ>>
+<返回/@_UseItem(1)>
+
+[@GMWhitevillageSZ]
+#ACT
+MOVE whitevillage 297 250
+CLOSE
+
+[@GMSnowcaveSZ]
+#ACT
+MOVE whitevillage 465 39
+CLOSE
+
+[@GMIcelandSZ]
+#ACT
+MOVE whitevillage 54 35
+CLOSE
+
+[@MapOfGM]
+#ACT
+MOVE GM 135 94
+CLOSE
+
+[@GMNAMMAN]
+#SAY
+<<南蛮/@GMNAMMANSZ>>
+<<古代遗迹/@GMNAMMAN2SZ>>
+<返回/@_UseItem(1)>
+
+[@GMNAMMANSZ]
+#ACT
+MOVE NAMMAN 701 122
+CLOSE
+
+[@GMNAMMAN2SZ]
+#ACT
+MOVE NAMMAN 760 724
+CLOSE
+
+[@GMPastBichon]
+#SAY
+<<远古比奇/@GMPastBichonSZ>>
+<<魔龙东入口/@PastBichonEast>>
+<<魔龙西入口/@PastBichonWest>>
+<返回/@_UseItem(1)>
+
+[@GMPastBichonSZ]
+#ACT
+MOVE 6 121 154
+CLOSE
+
+[@PastBichonEast]
+#ACT
+MOVE 6 467 379
+CLOSE
+
+[@PastBichonWest]
+#ACT
+MOVE 6 456 71
+CLOSE
+
+[@GMBichon]
+#SAY
+<<飞天城/@BichonSZ>>
+<<边界村/@BichonBJC>>
+<<半兽古墓入口/@BichonOmaCave>>
+<<封闭的僵尸洞入口/@BichonMines>>
+<<竞技场二层/@BichonContest>>
+<返回/@_UseItem(1)>
+
+[@BichonContest]
+#ACT
+MOVE 0139
+CLOSE
+
+[@BichonBJC]
+#ACT
+MOVE 0 289 617
+CLOSE
+
+[@BichonSZ]
+#ACT
+MOVE 0 333 267
+CLOSE
+
+[@BichonOmaCave]
+#ACT
+MOVE 0 142 42
+CLOSE
+
+[@BichonMines]
+#ACT
+MOVE 0 660 219
+CLOSE
+
+[@GMWoomyon]
+#SAY
+<<沃玛村庄/@WoomyonSZ>>
+<<虫洞入口/@WoomyonInsect>>
+<<沃玛寺庙入口/@WoomyonWoomaT>>
+<返回/@_UseItem(1)>
+
+[@WoomyonSZ]
+#ACT
+MOVE 1 315 81
+CLOSE
+
+[@WoomyonInsect]
+#ACT
+MOVE 1 210 524
+CLOSE
+
+[@WoomyonWoomaT]
+#ACT
+MOVE 1 87 284
+CLOSE
+
+[@GMUMM]
+#SAY
+<<石槽矿山/@GMUMMSZ>>
+<<石槽矿区/@GMSG001SZ>>
+<返回/@_UseItem(1)>
+
+[@GMUMMSZ]
+#ACT
+MOVE UMM 120 173
+CLOSE
+
+[@GMSG001SZ]
+#ACT
+MOVE UMM 43 108
+CLOSE
+
+[@GMSerpent]
+#SAY
+<<毒蛇村/@SerpentSZ>>
+<<毒蛇矿区入口/@SerpentMines>>
+<Back/@_UseItem(1)>
+
+[@SerpentSZ]
+#ACT
+MOVE 2 503 484
+CLOSE
+
+[@SerpentMines]
+#ACT
+MOVE 2 561 174
+CLOSE
+
+[@GMMongchon]
+<<梦重城/@MWSafeZone>>
+<<蜈蚣洞穴入口/@MWBugCave>>
+<<石墓入口/@MWStoneTemple>>
+<<祖玛寺庙入口/@MWZumaTemple>>
+<<悲月山洞入口/@MWFoxCave>>
+<<红名村/@MWPenal>>
+<<沙巴克/@MWSabuk>>
+<<沙巴克秘密通道入口/@MWSabukSecret>>
+<<沙巴克异秘洞入口/@MWSwamp>>
+<<沙遗迹入口/@MWForgottenCity>>
+<返回/@_UseItem(1)>
+
+[@MWSafeZone]
+#ACT
+MOVE 3 328 330
+CLOSE
+
+[@MWBugCave]
+#ACT
+MOVE 3 144 93
+CLOSE
+
+[@MWStoneTemple]
+#ACT
+MOVE 3 303 327
+CLOSE
+
+[@MWZumaTemple]
+#ACT
+MOVE 3 859 179
+CLOSE
+
+[@MWFoxCave]
+#ACT
+MOVE 3 654 762
+CLOSE
+
+[@MWPenal]
+#ACT
+MOVE 3 849 673
+CLOSE
+
+[@MWSabuk]
+#ACT
+MOVE 3 637 284
+CLOSE
+
+[@MWSabukSecret]
+#ACT
+MOVE 3 660 273
+CLOSE
+
+[@MWSwamp]
+#ACT
+MOVE 3 645 254
+CLOSE
+
+[@MWForgottenCity]
+#ACT
+MOVE 3 411 200
+CLOSE
+
+[@GMCastle]
+#SAY
+<<夔龙城/@CastleGISZ>>
+<<黑龙洞穴入口/@BDD>>
+<<封闭的黑龙洞穴入口/@CastleIceTemp>>
+<<神穿鬼路入口/@CastleDragonSwamp>>
+<返回/@_UseItem(1)>
+
+[@CastleGISZ]
+#ACT
+MOVE 4 226 207
+CLOSE
+
+[@BDD]
+#ACT
+MOVE 4 60 71
+CLOSE
+
+[@CastleIceTemp]
+#ACT
+MOVE 4 139 69
+CLOSE
+
+[@CastleDragonSwamp]
+#ACT
+MOVE 4 45 211
+CLOSE
+
+[@GMPrajna]
+#SAY
+<<潘夜岛/@PrajnaSZ>>
+<<般若石窟入口/@PrajnaCave>>
+<<般若神殿入口/@PrajnaTemple>>
+<返回/@_UseItem(1)>
+
+[@PrajnaSZ]
+#ACT
+MOVE 5 141 334
+CLOSE
+
+[@PrajnaCave]
+#ACT
+MOVE 5 524 615
+CLOSE
+
+[@PrajnaTemple]
+#ACT
+MOVE 5 570 425
+CLOSE
+
+[@GMTaoVillage]
+#SAY
+<<道馆/@TaoSafeZone>>
+<<迷石矿山入口/@TaoMineralMines>>
+<<丛林迷宫入口/@TaoTreePath>>
+<<玄月林入口/@TaoDarkForest>>
+<<赤月峡谷东入口/@TaoRedValley>>
+<<月之谷入口/@TaoLunar>>
+<返回/@_UseItem(1)>
+
+[@TaoSafeZone]
+#ACT
+MOVE 11 186 315
+CLOSE
+
+[@TaoMineralMines]
+#ACT
+MOVE 11 44 319
+CLOSE
+
+[@TaoTreePath]
+#ACT
+MOVE 11 358 248
+CLOSE
+
+[@TaoDarkForest]
+#ACT
+MOVE 11 180 194
+CLOSE
+
+[@TaoRedValley]
+#ACT
+MOVE 12 93 17
+CLOSE
+
+[@TaoLunar]
+#ACT
+MOVE 12 52 54
+CLOSE
+
+[@GCommands]
+#SAY
+Player:
+@AllowGuild     @LeaveGuild
+@AllowTrade     @Map
+@Move X,Y       @EnableGroupRecall
+@GroupRecall    @RecallMember (Name)
+@Time           @Roll
+@Find (Name)    @Ride
+@Die            @AddInventory
+@ToggleTransform
+
+GameMaster:
+@MapMove (Map,X,Y)  @Mob
+@Make               @Gamemaster
+@Superman           @Level
+@Goto               @RecallMob
+@GiveSkill          @Info
+<Back/@_UseItem(1)>
+
+}

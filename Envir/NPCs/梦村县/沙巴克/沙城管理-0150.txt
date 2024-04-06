@@ -1,0 +1,239 @@
+[@MAIN]
+#IF
+CONQUESTOWNER 1
+CHECKPERMISSION 1
+#SAY
+
+{沙巴克所属行会：/PERU}<$CONQUESTOWNER(1)> 
+当前沙巴克城税率为：<$CONQUESTRATE(1)>
+现在金库中所存的金币数量为:<$CONQUESTGOLD(1)>
+
+<<守卫管理/@hirearchers>>
+<<设施维护/@FacilityMaintenance>>
+<<控制城门/@treatordoor>>
+<<调整税率/@SBKsuilV>>
+<<取回资金/@Takeorgold>>
+
+#ELSESAY
+你没有使用权限！
+
+
+[@Takeorgold]
+#ACT
+TAKECONQUESTGOLD 1
+
+[@SBKsuilV]
+当前沙巴克城税率为：<$CONQUESTRATE(1)>
+
+<<税率为1%/@SBKSL1>>
+<<税率为5%/@SBKSL5>>
+<<税率为15%/@SBKSL15>>
+<<税率为30%/@SBKSL30>>
+<返回首页/@MAIN>
+
+[@SBKSL1]
+#ACT
+SETCONQUESTRATE 1 1
+LocalMessage " 税率设置完成" Shout
+
+[@SBKSL5]
+#ACT
+SETCONQUESTRATE 1 5
+
+[@SBKSL15]
+#ACT
+SETCONQUESTRATE 1 15
+
+[@SBKSL30]
+#ACT
+SETCONQUESTRATE 1 30
+
+
+[@treatordoor]
+城门当前状态： <$CONQUESTGATE(1,1)>
+<<开启城门/@openmaindoor>>
+<<关闭城门/@closemaindoor>>
+<返回首页/@MAIN>
+
+[@openmaindoor]
+#ACT
+OPENGATE 1 1
+#SAY
+
+<返回首页/@MAIN>
+
+[@closemaindoor]
+#ACT
+CLOSEGATE 1 1
+#SAY
+
+<返回首页/@MAIN>
+
+[@FacilityMaintenance]
+请选择要修理的部位
+
+<<修理城门/@repairdoor>>
+<<修理城墙/@repairwalls>>
+<<修理攻城车/@repairSiege>>
+<返回首页/@MAIN>
+
+[@repairSiege]
+<$CONQUESTSIEGE(1,1)>
+<<修理攻城车/@repairtheSiege>>
+<返回首页/@MAIN>
+
+[@repairtheSiege]
+#ACT
+CONQUESTSIEGE 1 1
+#SAY
+攻城车已修复
+<返回首页/@MAIN>
+
+[@repairdoor]
+<$CONQUESTGATE(1,1)>
+<<修理城门/@repairthedoor>>
+<返回首页/@MAIN>
+
+[@repairthedoor]
+#ACT
+ConQuestGate 1 1
+#SAY
+城门已修复
+<返回首页/@MAIN>
+
+[@repairwalls]
+左城墙状态：<$CONQUESTWALL(1,1)>
+<<修理左城墙/@repairwall1>>
+中城墙状态：<$CONQUESTWALL(1,2)>
+<<修理中城墙/@repairwall2>>
+右城墙状态：<$CONQUESTWALL(1,3)>
+<<修理右城墙/@repairwall3>>
+<返回首页/@MAIN>
+
+[@repairwall1]
+#ACT
+ConQuestWall 1 1
+#SAY
+左城墙已修复
+<返回/@repairwalls>
+
+[@repairwall2]
+#ACT
+ConQuestWall 1 2
+#SAY
+中城墙已修复
+<返回/@repairwalls>
+
+[@repairwall3]
+#ACT
+ConQuestWall 1 3
+#SAY
+右城墙已修复
+<返回/@repairwalls>
+
+
+[@hirearchers]
+{雇用每个弓箭手的费用为10000金币/PINK}
+1号<$CONQUESTGUARD(1,1)> 2号<$CONQUESTGUARD(1,2)>
+<<城墙左1号雇佣/@xiufugjs1>>
+<<城墙左2号雇佣/@xiufugjs2>>
+3号<$CONQUESTGUARD(1,3)> 4号<$CONQUESTGUARD(1,4)>
+<<城墙左3号雇佣/@xiufugjs3>>
+<<城墙右4号雇佣/@xiufugjs4>>
+5号<$CONQUESTGUARD(1,5)> 6号<$CONQUESTGUARD(1,6)>
+<<城墙右5号雇佣/@xiufugjs5>>
+<<城墙右6号雇佣/@xiufugjs6>>
+7号<$CONQUESTGUARD(1,7)> 8号<$CONQUESTGUARD(1,8)>
+<<皇宫左7号雇佣/@xiufugjs7>>
+<<皇宫右8号雇佣/@xiufugjs8>>
+9号<$CONQUESTGUARD(1,9)> 10号<$CONQUESTGUARD(1,10)>
+<<城门左9号雇佣/@xiufugjs9>>
+<<城门左10号雇佣/@xiufugjs10>>
+11号<$CONQUESTGUARD(1,11)> 12号<$CONQUESTGUARD(1,12)>
+<<城门右11号雇佣/@xiufugjs11>>
+<<城门右12号雇佣/@xiufugjs12>>
+<返回首页/@MAIN>
+
+[@xiufugjs1]
+#ACT
+CONQUESTGUARD 1 1
+#SAY
+1号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs2]
+#ACT
+CONQUESTGUARD 1 2
+#SAY
+2号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs3]
+#ACT
+CONQUESTGUARD 1 3
+#SAY
+3号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs4]
+#ACT
+CONQUESTGUARD 1 4
+#SAY
+4号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs5]
+#ACT
+CONQUESTGUARD 1 5
+#SAY
+5号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs6]
+#ACT
+CONQUESTGUARD 1 6
+#SAY
+6号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs7]
+#ACT
+CONQUESTGUARD 1 7
+#SAY
+7号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs8]
+#ACT
+CONQUESTGUARD 1 8
+#SAY
+8号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs9]
+#ACT
+CONQUESTGUARD 1 9
+#SAY
+9号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs10]
+#ACT
+CONQUESTGUARD 1 10
+#SAY
+10号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs11]
+#ACT
+CONQUESTGUARD 1 11
+#SAY
+11号弓箭手已复活
+<返回/@hirearchers>
+
+[@xiufugjs12]
+#ACT
+CONQUESTGUARD 1 12
+#SAY
+12号弓箭手已复活
+<返回/@hirearchers>

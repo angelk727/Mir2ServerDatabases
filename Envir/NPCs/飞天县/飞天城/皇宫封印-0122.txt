@@ -1,0 +1,89 @@
+[@MAIN]
+#IF
+CHECKITEM 二锅头 1
+#ACT
+GOTO @MAIN-1
+#ELSEACT
+GOTO @MAIN-2
+
+[@MAIN-1]
+#IF
+CHECK [537] 1
+#ACT
+TAKEITEM 二锅头 1
+#SAY
+哈哈... 这是Mogu给你的吗...
+这些符号... 我也解读不出更多的含义了.
+不过这几个字的意思是. 
+      "{一个远古时期的地牢./Gray}"
+ 
+谢谢 <Emperor Far/@THX2>
+#ELSEACT
+GOTO @MAIN-3
+
+[@MAIN-2]
+#IF
+CHECK [537] 1
+#SAY
+这些符号... 我曾经帮助Mogu先生研究过这些符号.
+我也无法解读出更多的信息..
+不过这个石头上写的意思是. 
+      "{一个远古时期的地牢./Gray}"
+ 
+谢谢 <Emperor Far/@THX>
+#ELSEACT
+GOTO @MAIN-3
+
+[@THX]
+#ACT
+SET [535] 1
+
+[@THX2]
+#ACT
+SET [535] 1
+SET [538] 1
+
+[@MAIN-3]
+#SAY
+你好旅行者，我是封印管理者有什么需要帮助的吗？
+
+<装备绑定/@Buy>
+制作或替换<结婚戒指/@ZZTHHJ>
+
+[@Buy]
+#SAY
+买
+ 
+<返回/@Main>
+
+[Types]
+18
+
+[Trade]
+装备绑定卷轴
+
+[@ZZTHHJ]
+#SAY
+需要我做些什么呢？
+必须结婚后才可以制作婚戒 ，
+制作前请在左手位置佩戴好你钟意的戒指。
+结婚戒指一但制作完成将不可卸下，可通过替换戒指完成
+对戒指的更换。婚姻解除后结婚戒指将自动解除绑定。
+ 
+<<婚戒替换/@REPLACEWEDDINGRING>>
+<<制作婚戒/@HJSELLNEW>>
+<返回/@MAIN-3>
+
+[@REPLACEWEDDINGRING]
+#SAY
+当前左戒指：<$RING_L>
+将要替换的戒指放入......
+#ACT
+REPLACEWEDDINGRING
+
+[@HJSELLNEW]
+#ACT
+MakeWeddingRing
+
+[Quests]
+-154

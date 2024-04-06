@@ -1,0 +1,23 @@
+[@Description]
+穿过本国通路
+拜见 {雪白县/Yellow} 的阵地队长 {周律/LimeGreen} 
+
+[@TaskDescription]
+与雪白县的阵地队长 {周律/LimeGreen} 交谈
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+333000000
+[@GoldReward]

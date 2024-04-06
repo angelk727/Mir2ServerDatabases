@@ -1,0 +1,69 @@
+[@Main]
+#SAY
+{<$NPCNAME>/KHAKI}：提示你加入行会
+你好{<$USERNAME>/KHAKI} 隶属行会：{<$GUILDNAME>/CORAL} 
+
+<加入行会/@申请入会>
+<脱离行会/@离开行会>
+<注册行会/@注册行会名>
+<撤销注册/@撤销行会名>
+<检查行会是否注册/@检测行会列表>
+
+[@离开行会]
+#IF
+INGUILD
+#ACT
+REMOVEFROMGUILD <$GUILDNAME>
+#SAY
+已离开所在行会
+#ELSESAY
+未加入任何行会，不能执行此操作！
+
+[@撤销行会名]
+#IF
+INGUILD
+#ACT
+DELGUILDNAMELIST 行会列表
+#SAY
+撤销行会注册成功
+
+[@检测行会列表]
+;;#INSERT [NameLists/行会列表]
+#IF
+CHECKGUILDNAMELIST 行会列表
+#SAY
+行会名称已经注册
+#ELSESAY
+你的行会还未注册
+
+[@注册行会名]
+#IF
+INGUILD
+#ACT
+ADDGUILDNAMELIST 行会列表
+#SAY
+行会列表添加成功
+
+[@申请入会]
+#IF
+INGUILD
+#INSERT [NameLists/行会列表]
+#ELSESAY
+输入你要加入公会的名称 
+<输入公会名称/@@加入公会名称>
+#SAY
+你已经加入公会
+
+
+[@@加入公会名称]
+#ACT
+MOV A1 %INPUTSTR
+ADDTOGUILD <$OUTPUT(A1)>
+
+#SAY
+你成功加入行会
+
+
+
+
+

@@ -1,0 +1,26 @@
+[@Description]
+拜访 {夔龙城/Yellow} 营房外的 {研究团长/LimeGreen}
+将咒魔术士的 {咒魔术士的杖、异常咒魔珠/LightSteelBlue} 
+之间的法力增幅原理告诉他
+
+[@TaskDescription]
+与夔龙城的研究团长交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

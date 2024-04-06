@@ -1,0 +1,101 @@
+[@Main]
+#SAY
+今天是<$DATE> 亲爱的游戏管理员想让我做些什么？
+能为你管理一些事务是一种快乐！
+
+<<创建行会/@CreateGuildCheck>>
+<<寄卖市场/@MARKET>>
+<<物品寄售/@CONSIGN>> 
+<<杀死宠物/@KillPets>> 
+<<存储仓库/@Storage>>  
+<<恢复任务/@ResetQuestFlags>>
+ 
+<退出/@Exit>                                                  <事件管理页面/@EventManagment>
+
+
+[@CreateGuildCheck]
+#IF
+CHECKGOLD < 1000000
+#ACT
+GIVEGOLD 1000000
+GOTO @CheckLevel
+#ELSEACT
+GOTO @CheckLevel
+
+[@CheckLevel]
+#IF
+LEVEL < 22
+#ACT
+CHANGELEVEL 22
+GOTO @GiveHorn
+#ELSEACT
+GOTO @GiveHorn
+
+[@GiveHorn]
+#ACT
+CHECKITEM 沃玛号角 1
+GIVEITEM 沃玛号角 1
+GOTO @CREATEGUILD
+#ELSEACT
+GOTO @CREATEGUILD
+
+
+[@KillPets]
+#ACT
+CLEARPETS
+LINEMESSAGE "已经按照要求处理了你的宠物" Hint
+
+
+[@CREATEGUILD]
+[@MARKET]
+[@CONSIGNMENT]
+
+
+[@CONSIGN]
+#SAY
+以下是寄售的佣金{'相关事宜'/LimeGreen}
+1、寄售费：确认销售后，支付销售价格的1%。
+2、信托费用：委托时，支付“ 1000金币“做为佣金。
+3、销售期：物品销售登记100天后，该项目将自动从列表中删除。
+4、销售物品数量：最多允许30个物品同时供出售。
+5、委卖资金限额：可在以下范围内设置 10000-50000000 金币。
+
+
+[@Storage]
+#SAY
+相信我，我会看管好你的东西！
+ 
+ 
+ 
+ 
+ 
+<返回主页/@Main> - <退出/@Exit>
+
+
+[@ResetQuestFlags]
+#ACT
+SET [500] 0
+SET [501] 0
+SET [502] 0
+SET [503] 0
+SET [504] 0
+SET [505] 0
+SET [506] 0
+SET [507] 0
+SET [508] 0
+SET [509] 0
+SET [510] 0
+LINEMESSAGE "所有任务标志都已重置" Hint
+
+[@EventManagment]
+#SAY
+随着时间的推移，服务器会开发会添加更多功能
+欢迎到<技术网站/@VisitWebsite>提出改进方案
+
+
+[@VisitWebsite]
+#ACT
+OPENBROWSER https://github.com/angelk727/mir2
+ 
+  
+<返回主页/@Main>

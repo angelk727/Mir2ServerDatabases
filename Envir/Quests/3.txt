@@ -1,0 +1,26 @@
+﻿[@Description]
+你好,旅行者
+边界村 {肉店/LimeGreen} 正在寻求帮助
+我想他一定是遇上麻烦事了
+
+[@TaskDescription]
+在坐标 293:603 附近找到 {金老板/LimeGreen}
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+锋锐之匕
+猛虎刀
+
+[@ExpReward]
+150
+
+[@GoldReward]

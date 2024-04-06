@@ -1,0 +1,48 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<Close/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+欢迎，我能为你做些什么?
+ 
+<浏览/@BuySell> 商店
+<修理/@Repair> 靴子或腰带
+ 
+<关闭/@exit>
+
+[@BuySell]
+#SAY
+你要买卖什么东西?
+<买回/@BuyBack>
+ 
+<返回/@main>
+
+[@BuyBack]
+#SAY
+如果你不离线，那么你卖出的东西就可以买回去
+ 
+<返回/@main>
+
+[@Repair]
+#SAY
+你可以在我这里修理各种靴子和腰带
+  
+<返回/@main>
+
+[Types]
+9
+10
+
+[Trade]
+兽皮腰带
+铁腰带
+布鞋
+鹿皮靴

@@ -1,0 +1,5 @@
+;;祝融石碎片箱
+[@_UseItem(20)]
+#IF
+#ACT
+GIVEITEM 祝融石碎片 700

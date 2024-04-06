@@ -1,0 +1,26 @@
+[@Description]
+拜访 {夔龙城/Yellow} 营房外 {研究团长/LimeGreen}
+转交 {咒魔神秘石/LightSteelBlue}
+
+[@TaskDescription]
+与夔龙城的研究团长交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+咒魔神秘石
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

@@ -1,0 +1,26 @@
+[@Description]
+一块神秘的石头......带有未知的古代符文
+你一定有办法解开这些符文
+
+[@TaskDescription]
+Search {OmaCavern/Yellow} for the {AncientScyther/LightSteelBlue}.
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+AncientScyther 1
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+3500
+
+[@GoldReward]

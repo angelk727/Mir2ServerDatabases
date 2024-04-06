@@ -1,0 +1,14 @@
+;;神泉水罐
+[@_UseItem(19)]
+#IF
+HASBAGSPACE > 4
+#ACT
+GIVEITEM 勇泉水 1
+GIVEITEM 淡泉水 1
+GIVEITEM 寒泉水 1
+GIVEITEM 神泉水 1
+GIVEITEM 绽泉水 1
+#ELSEACT
+GIVEITEM 神泉水罐 1
+LocalMessage "背包空间不足！！！" Hint
+BREAK

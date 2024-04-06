@@ -1,0 +1,87 @@
+[@MAIN]
+#SAY
+传奇可以升到多少级？
+<投色子/@TSZ1>
+<投色子/@TSZ2>
+<回答问题/@QUESTION>
+<命令测试/@MLCS1>
+<特效测试/@BUFFNEW>
+<结婚戒指/@WINNEW>
+<传送地图/@CSMAP>
+
+
+[@CSMAP]
+#ACT
+MOVE D5071
+
+
+[@QUESTION]
+#ACT
+MOV A1 %INPUTSTR
+
+LOCALMESSAGE "你输入的是 <$OUTPUT(A1)>" Hin
+
+[@TSZ1]
+#SAY
+<$ROLLRESULT>
+#ACT
+
+ROLLDIE @MAIN false
+
+[@TSZ2]
+#SAY
+<$ROLLRESULT>
+#ACT
+
+ROLLYUT  @MAIN  true
+
+[@MLCS1]
+#IF
+LEVEL > 64
+#ACT
+ENTERMAP
+#ELSEACT
+LocalMessage "一股神秘的邪恶力量似乎在要把你推倒。" Hint
+
+[@BUFFNEW]
+#SAY
+你好！想测试什么呢？
+<增加特效/@TXHero>
+
+[@TXHero]
+#ACT
+REMOVEBUFF 变形效果
+GIVEBUFF 冰龍祝福 60
+LocalMessage "特效生成" Hint
+ 
+[@ReviveHero]
+#ACT
+ReviveHero
+
+[@SealHero]
+#ACT
+SealHero
+
+[@MANAGEHERO]
+#ACT
+MANAGEHERO
+
+[@WINNEW]
+<婚戒替换/@REPLACEWEDDINGRING>
+<制作婚戒/@HJSELLNEW>
+
+[@REPLACEWEDDINGRING]
+#SAY
+你好
+#ACT
+REPLACEWEDDINGRING
+
+[@HJSELLNEW]
+#ACT
+MakeWeddingRing
+
+[Types]
+
+
+[Trade]
+

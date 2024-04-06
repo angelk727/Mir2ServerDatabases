@@ -1,0 +1,31 @@
+[@Description]
+传说在很久很久以前,
+某个恶人偷走我们学校的圣剑,传说中一旦风暴来袭
+且恶龙出现之时,圣剑将会破碎并释放出它强大
+的力量玛法大陆还流传着一首古老的歌谣,
+{"风暴现,恶龙出,圣剑碎,天地崩"/Yellow}
+当然,这可能只是一个传说而已
+但如果圣剑真的存在且又如此强大,
+那么它失去了道馆的控制将是非常可怕的
+
+[@TaskDescription]
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+527 "与道馆教头交谈"
+528 "与道馆馆长天尊交谈"
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+
+[@GoldReward]

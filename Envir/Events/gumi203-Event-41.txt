@@ -1,0 +1,8 @@
+[@_EventReward]
+#ACT
+GIVEEXP 12000
+GIVEGOLD 120000
+ADDATTRIBUTEPOINT 2
+#INCLUDE [Events\Event\Event41.txt] @Main
+LOCALMESSAGE "我看见你的飞天石雕像！" Hint
+

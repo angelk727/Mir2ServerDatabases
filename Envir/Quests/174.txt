@@ -1,0 +1,27 @@
+[@Description]
+完成最终考验
+进入光辉团部长 {郭圭/LimeGreen} 身后的 {沙遗迹祠堂/Yellow} 
+击杀 {魔风石怪/Crimson}
+
+[@TaskDescription]
+与沙遗迹地的光辉团部长交谈
+
+[@Completion]
+
+[@KillTasks]
+魔风石怪 1
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

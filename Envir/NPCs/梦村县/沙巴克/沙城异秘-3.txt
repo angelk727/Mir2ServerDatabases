@@ -1,0 +1,14 @@
+[@Main]
+#SAY
+你好，旅行者！
+我负责维护异秘洞洞口附近的安全防止怪物逃逸
+进入: <异秘洞/@MOVEEBEE01> {(8000 Gold)/GOLD}
+
+[@MOVEEBEE01]
+#IF
+CHECKGOLD > 8000
+#ACT
+MOVE EBEE01 15 271
+TAKEGOLD 8000
+#ELSESAY
+金币不足，不能帮你完成传送

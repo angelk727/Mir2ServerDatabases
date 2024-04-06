@@ -1,0 +1,27 @@
+[@Description]
+为研究 {沙遗迹 /Yellow} 怪物使用的特殊力量
+狩猎  {咒魔火弓师、咒魔风弓师/Crimson} 
+收集弓师的 {咒魔珠/LightSteelBlue} 15个
+
+[@TaskDescription]
+狩猎 {咒魔火弓师、咒魔风弓师/Crimson} 收集 {咒魔珠/LightSteelBlue}
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+咒魔珠 15
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+200000000
+
+[@GoldReward]

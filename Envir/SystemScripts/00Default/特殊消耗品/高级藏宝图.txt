@@ -1,0 +1,94 @@
+;;高级藏宝图
+[@_UseItem(15)]
+#IF
+RANDOM  450
+#ACT
+GIVEITEM 日闪 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 130
+#ACT
+GIVEITEM 护身气幕 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM  250
+#ACT
+GIVEITEM 金刚不坏 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM  350
+#ACT
+GIVEITEM 毒魔闪 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM  230
+#ACT
+GIVEITEM 邪爆闪 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 400
+#ACT
+GIVEITEM 血龙闪秘笈 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 150
+#ACT
+GIVEITEM 猫舌兰 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 180
+#ACT
+GIVEITEM 血风击 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 100
+#ACT
+GIVEITEM 烈火身 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 250
+#ACT
+GIVEITEM 血龙水 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 130
+#ACT
+GIVEITEM 先天气功 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 100
+#ACT
+GIVEITEM 毒雾 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 250
+#ACT
+GIVEITEM 天霜冰环 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 130
+#ACT
+GIVEITEM 火龙气焰 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 300
+#ACT
+GIVEITEM 天上落焰 1
+LocalMessage "恭喜" Hint
+BREAK
+#ELSEACT
+LocalMessage "很遗憾！什么都没得到。" Hint

@@ -1,0 +1,37 @@
+[@MAIN]
+#SAY
+Hello traveller, How may I help you?
+ 
+<View/@BuySell> Store. 
+ 
+<Close/@exit>
+
+[@BuySell]
+#SAY
+What Item would you like to buy or sell?
+<BuyBack/@BuyBack>
+ 
+<Back/@Main>
+
+[@BuyBack]
+#SAY
+These are the items still available to purchase back.
+ 
+<Back/@Main>
+
+[Types]
+13
+
+[Trade]
+体力恢复药 1
+体力恢复药 20
+魔力恢复药 1
+魔力恢复药 20
+体力恢复药(中) 1
+体力恢复药(中) 20
+魔力恢复药(中) 1
+魔力恢复药(中) 20
+体力恢复药(大) 1
+体力恢复药(大) 20
+魔力恢复药(大) 1
+魔力恢复药(大) 20

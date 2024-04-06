@@ -1,0 +1,13 @@
+﻿[Recipe]
+Amount 1
+Chance 100
+Gold 100
+
+[Tools]
+
+[Ingredients]
+沃玛号角 1
+祖玛头像 1
+邪眼骷髅 1
+祝福油 1
+龙鳞 10

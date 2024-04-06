@@ -1,0 +1,4 @@
+[@MAIN]
+#IF
+#ACT
+MOVE iceland_field 163 77

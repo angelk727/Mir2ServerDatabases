@@ -1,0 +1,25 @@
+[@Description]
+我将尽力将 {咒魔神秘石/LightSteelBlue} 的咒魔解除
+你可以去 {夔龙城/Yellow} 找 {光辉团长/LimeGreen} 报告
+
+[@TaskDescription]
+与夔龙城的光辉团长交谈
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+120000000
+
+[@GoldReward]

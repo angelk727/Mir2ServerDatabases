@@ -1,0 +1,39 @@
+﻿[@Description]
+这里还有很多怪物,请你帮我消灭一些
+
+[@TaskDescription]
+消灭
+2只 {钢牙蜘蛛/Crimson} 和 {幻影蜘蛛/Crimson}
+3只 {花吻蜘蛛/Crimson} 和 {黑锷蜘蛛/Crimson}
+
+[@Completion]
+
+[@KillTasks]
+钢牙蜘蛛 2
+幻影蜘蛛 2
+花吻蜘蛛 3
+黑锷蜘蛛 3
+
+[@ItemTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+战神盔甲(男)
+战神盔甲(女)
+恶魔长袍(男)
+恶魔长袍(女)
+幽灵战衣(男)
+幽灵战衣(女)
+炎红衣(男)
+炎红衣(女)
+魂魅神衣(男)
+魂魅神衣(女)
+
+[@ExpReward]
+35500
+
+[@GoldReward]
+35500

@@ -1,0 +1,26 @@
+[@Description]
+你好旅行者,欢迎来到 {夔龙城/Yellow}
+替我拜访夔龙城西侧的警戒团长
+
+[@TaskDescription]
+与警戒团长 {婴穗/LimeGreen}交谈,
+他就在{夔龙城/Yellow} 50:215 附近
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+333000000
+
+[@GoldReward]

@@ -1,0 +1,9 @@
+;;打捆随机传送卷
+[@_UseItem(59)]
+#IF
+HASBAGSPACE > 1
+#ACT
+GIVEITEM 随机传送卷 6
+#ELSEACT
+GIVEITEM 打捆随机传送卷 1
+LocalMessage "背包空间不足！！！" Hint

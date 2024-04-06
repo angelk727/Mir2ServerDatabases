@@ -1,0 +1,38 @@
+[@Description]
+为调配 {雪白县/Yellow} 村子的生活用品
+分别击杀
+{冰原鬼/Crimson} 200只
+{冰原鬼弓士/Crimson} 200只
+{冰原鬼兵/Crimson} 200只
+{雪恶鬼/Crimson} 200只
+{恶鬼/Crimson} 200只
+{雪狼/Crimson} 200只
+并向阵地队长 {周律/LimeGreen} 报告
+
+[@TaskDescription]
+
+[@Completion]
+
+[@KillTasks]
+冰原鬼兵 200
+冰原鬼弓士 200
+冰原鬼 200
+雪恶鬼 200
+恶鬼 200
+雪狼 200
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+祝融石碎片箱
+
+[@SelectRewards]
+
+[@ExpReward]
+330000000
+
+[@GoldReward]

@@ -1,0 +1,26 @@
+﻿[@Description]
+旅行者,请帮帮我
+我在 {丛林迷宫/Yellow} 砍树时把 {旧斧子/LightSteelBlue} 弄丢了
+我觉得是被花吻蜘蛛偷走了,你能帮我找回吗?
+
+[@TaskDescription]
+击杀 {花吻蜘蛛/Crimson} 并找回 {旧斧子/LightSteelBlue}
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+旧斧子 1
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+35000
+
+[@GoldReward]
+35000

@@ -1,0 +1,24 @@
+[@Description]
+前往 {丛林迷宫/Yellow} 猎杀 {幻影蜘蛛/Crimson} 
+然后回去找{道馆/Yellow} 的馆长 {天尊/LimeGreen}
+
+[@TaskDescription]
+
+[@Completion]
+
+[@KillTasks]
+幻影蜘蛛 1 "杀死一只幻影蜘蛛"
+
+[@ItemTasks]
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+
+[@GoldReward]

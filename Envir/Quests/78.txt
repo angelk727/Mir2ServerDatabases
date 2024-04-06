@@ -1,0 +1,31 @@
+﻿[@Description]
+谢谢你旅行者
+从我 {儿子/LightSteelBlue} 的遗物中我发现
+他正在寻找埋藏在{蛇谷矿区/Yellow}中的财宝
+这件旧法袍上记录了他发现的线索
+请帮我去取回盒子中{失窃的金币/LightSteelBlue}
+
+[@TaskDescription]
+打碎 {隐藏的盒子/Crimson} 取回失窃的金币
+它掉落在{蛇谷矿区二层/Yellow} 的35,303附近
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+失窃的金币 1
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+黑色水晶戒指
+蛇眼戒指
+珍珠戒指
+
+[@ExpReward]
+48000
+[@GoldReward]
+24000

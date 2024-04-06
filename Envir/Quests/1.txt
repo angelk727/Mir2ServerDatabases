@@ -1,0 +1,25 @@
+﻿[@Description]
+年轻的旅者,欢迎来到 {边界村/Yellow}
+在开始你的旅途之前,能否先帮我个小忙? 
+
+[@TaskDescription]
+把{食人花叶子/LightSteelBlue}捎给制造尚宫的{幼贞/LimeGreen}
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+
+[@CarryItems]
+食人花叶子
+
+[@FixedRewards]
+体力恢复药 5
+
+[@SelectRewards]
+
+[@ExpReward]
+50
+
+[@GoldReward]

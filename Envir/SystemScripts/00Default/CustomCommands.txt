@@ -1,0 +1,46 @@
+﻿;;召唤护卫命令
+[@_CUSTOMCOMMAND(召唤护卫)]
+#INCLUDE [SystemScripts\00Default\GuardsHelp.txt] @Main
+
+;;远古神石命令
+[@_CUSTOMCOMMAND(神石开启)]
+#IF
+CHECKITEM 远古神石[3d]
+#ACT
+GIVEBUFF Exp 0 50 TRUE
+LocalMessage "经验提高50%" Hint
+#ELSEACT
+LocalMessage "你没有 远古神石!" Hint
+
+[@_CUSTOMCOMMAND(神石关闭)]
+#IF
+CHECKITEM 远古神石[3d]
+#ACT
+REMOVEBUFF Exp
+LocalMessage "经验提高BUFF已经停止" Hint
+#ELSEACT
+LocalMessage "你没有 远古神石！" Hint
+
+;;PK命令
+[@_CUSTOMCOMMAND(PK)]
+#ACT
+LocalMessage "你现在的PK值为 <$PKPOINT> " Hint
+
+;;华丽的雨光时装命令
+[@_CUSTOMCOMMAND(雨光开启)]
+#IF
+CHECKITEM 华丽的雨光[3d]
+#ACT
+GIVEBUFF 雨光 0 50 TRUE
+LocalMessage "攻击/魔攻/道术+3, 敏捷+4, 中毒恢复+1, 经验值+30%" Hint
+#ELSEACT
+LocalMessage "你没有穿着华丽的雨光时装!" Hint
+
+[@_CUSTOMCOMMAND(雨光关闭)]
+#IF
+CHECKITEM 华丽的雨光[3d]
+#ACT
+REMOVEBUFF 雨光
+LocalMessage "雨光特效已经停止" Hint
+#ELSEACT
+LocalMessage "你没有穿着华丽的雨光时装！" Hint

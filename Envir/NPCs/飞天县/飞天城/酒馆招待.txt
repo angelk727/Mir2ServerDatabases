@@ -1,0 +1,67 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<Close/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+需要帮助吗? 
+ 
+<买/@Buy> 酒
+<聊天/@talk>
+<关闭/@exit>
+
+[@Buy]
+#INCLUDE [SystemScripts/SharedNPCS/Tavern.txt] @Main
+
+[@talk]
+#IF
+CHECK [533] 1
+CHECK [534] 1
+#SAY
+谣言。。。谣言。。。现在人们对我有什么看法？
+ 
+"你曾经研究过<Language/@Lang>"
+"你是个疯老头 <fool/@Fool>"
+"我不想说。。你看到这个了吗 <before?/@Before1>"
+"从未 <Mind/@exit>
+#ELSESAY
+抱歉，我和你没什么可谈的
+ 
+<关闭/@exit> 
+
+[@Lang]
+#ACT
+SET [537] 1
+#SAY
+我猜这次谣言是真的。。
+是的，我研究了一种古老的语言。。。我运气不好
+不过。我发现的最有用的信息是在皇宫。
+与皇帝远谈，他虽然疯狂但也懒惰。。。我会接受的
+他有些 二锅头 帮他成功.
+<Close/@exit>
+
+[@fool]
+#SAY
+多疯狂的老傻瓜，我想知道告诉过你。
+我要给他们看一个疯狂的老傻瓜。
+“你见过这种语言吗 <Before/@before1>?"
+<Close/@exit>
+
+[@before1>
+#ACT
+SET [537] 1
+#SAY
+哦，是的。。。我以前见过这种语言。。。我花了很多年
+研究它。去皇宫里和他认识的皇帝谈谈
+差不多了。
+<Close/@exit>
+
+[Quests]
+-95

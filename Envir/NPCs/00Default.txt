@@ -1,0 +1,38 @@
+#INSERT [SystemScripts\00Default\Login.txt] @Main
+#INSERT [SystemScripts\00Default\UseItems.txt] @Main
+#INSERT [SystemScripts\00Default\CustomCommands.txt] @Main
+#INSERT [SystemScripts\00Default\OnAcceptQuests.txt] @Main
+#INSERT [SystemScripts\00Default\LevelUp.txt] @Main
+#INSERT [SystemScripts\00Default\TownScroll.txt] @Main
+#INSERT [SystemScripts\00Default\DungeonScroll.txt] @Main
+#INSERT [SystemScripts\00Default\HeroUseItems.txt] @Main
+#INSERT [SystemScripts\00Default\MapCoords.txt] @Main
+#INSERT [SystemScripts\00Default\OnFinishQuests.txt] @Main
+
+#INSERT [SystemScripts\00Default\特殊消耗品\破旧藏宝图.txt] @Main   ;;破旧藏宝图ID: 14
+#INSERT [SystemScripts\00Default\特殊消耗品\高级藏宝图.txt] @Main   ;;高级藏宝图ID: 15
+#INSERT [SystemScripts\00Default\特殊消耗品\公会教义10.txt] @Main   ;;公会教义10ID: 16
+#INSERT [SystemScripts\00Default\特殊消耗品\公会教义25.txt] @Main   ;;公会教义25ID: 17
+#INSERT [SystemScripts\00Default\特殊消耗品\公会教义40.txt] @Main   ;;公会教义40ID: 18
+#INSERT [SystemScripts\00Default\特殊消耗品\神泉水罐.txt] @Main     ;;神泉水罐ID: 19
+#INSERT [SystemScripts\00Default\特殊消耗品\祝融石碎片箱.txt] @Main  ;;祝融石碎片箱ID: 20
+#INSERT [SystemScripts\00Default\特殊消耗品\雪之花.txt] @Main       ;;雪之花ID: 21
+#INSERT [SystemScripts\00Default\特殊消耗品\红色宝箱.txt] @Main     ;;红色宝箱ID: 22
+#INSERT [SystemScripts\00Default\特殊消耗品\春天首饰盒.txt] @Main     ;;春天首饰盒ID: 23
+
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆体力恢复药(小).txt] @Main     ;;打捆体力恢复药(小)ID: 50
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆魔力恢复药(小).txt] @Main     ;;打捆魔力恢复药(小)ID: 51
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆体力恢复药(中).txt] @Main     ;;打捆体力恢复药(中)ID: 52
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆魔力恢复药(中).txt] @Main     ;;打捆魔力恢复药(中)ID: 53
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆体力恢复药(大).txt] @Main     ;;打捆体力恢复药(大)ID: 54
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆魔力恢复药(大).txt] @Main     ;;打捆魔力恢复药(大)ID: 55
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆体力恢复药(特).txt] @Main     ;;打捆体力恢复药(特)ID: 56
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆魔力恢复药(特).txt] @Main     ;;打捆魔力恢复药(特)ID: 57
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆回城卷.txt] @Main        ;;打捆回城卷ID: 58
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆随机传送卷.txt] @Main     ;;打捆随机传送卷ID: 59
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆行会回城卷.txt] @Main     ;;打捆行会回城卷ID: 60
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆地牢传送卷.txt] @Main     ;;打捆地牢传送卷ID: 61
+#INSERT [SystemScripts\00Default\特殊消耗品\筹码包.txt] @Main            ;;筹码包ID: 62
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆黄色染料.txt] @Main       ;;筹码包ID: 63
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆红色染料.txt] @Main       ;;筹码包ID: 64
+#INSERT [SystemScripts\00Default\特殊消耗品\打捆灰色染料.txt] @Main       ;;筹码包ID: 65

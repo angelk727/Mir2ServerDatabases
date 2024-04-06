@@ -1,0 +1,42 @@
+[@MAIN]
+#IF
+CHECKPKPOINT > 2
+#SAY
+我绝对不会为你这样的恶人服务...
+ 
+ 
+<关闭/@exit>
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+你好 我叫巴托尔！
+要进地宫探险吗？需要的话我可以帮助你
+
+进入 <支柱地宫/@ZZDGtele>
+<下次再来/@exit> 
+
+[@ZZDGtele]
+#SAY
+确认进入支柱地宫?
+ 
+进入 <支柱地宫/@moveZZDG2> {(100000 Gold)/GOLD}
+
+[@moveZZDG2]
+#IF
+CHECKGOLD > 100000
+#ACT
+MOVE iceland_DOWN_HALL 38 142
+TAKEGOLD 100000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有足够的 {金币/Gold} !
+不要浪费我的时间，快走吧!
+
+<关闭/@exit>
+
+[Quests]

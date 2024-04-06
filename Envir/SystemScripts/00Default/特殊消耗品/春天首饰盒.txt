@@ -1,0 +1,94 @@
+;;春天首饰盒
+[@_UseItem(23)]
+#IF
+RANDOM  700
+#ACT
+GIVEITEM 金龙之链戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 650
+#ACT
+GIVEITEM 血龙戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM  600
+#ACT
+GIVEITEM 暴压戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM  550
+#ACT
+GIVEITEM 忠义戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM  500
+#ACT
+GIVEITEM 蚩尤戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 450
+#ACT
+GIVEITEM 青血灵戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 400
+#ACT
+GIVEITEM 蓝龙戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 350
+#ACT
+GIVEITEM 风来戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 300
+#ACT
+GIVEITEM 玲珑指环 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 250
+#ACT
+GIVEITEM 清灵指环 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 200
+#ACT
+GIVEITEM 抗魔轮 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 150
+#ACT
+GIVEITEM 心意环 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 150
+#ACT
+GIVEITEM 太极环 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 100
+#ACT
+GIVEITEM 琥珀项链 1
+LocalMessage "恭喜" Hint
+BREAK
+#IF
+RANDOM 100
+#ACT
+GIVEITEM 骷髅戒指 1
+LocalMessage "恭喜" Hint
+BREAK
+#ELSEACT
+LocalMessage "很遗憾！什么都没得到。" Hint

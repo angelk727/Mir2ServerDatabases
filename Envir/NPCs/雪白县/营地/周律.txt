@@ -1,0 +1,252 @@
+[@Main]
+#IF
+CHECKITEM 雪太狼的尖牙 1
+#SAY
+你得到了雪太狼的尖牙？！！！{<$USERNAME>/GREENYELLOW}  真是太厉害了！
+雪太狼的尖牙据说有神秘的力量！灵巧之力......
+用它雕琢首饰，可强化为具有更高属性的圣物级物品。
+<<关于白龙首饰/@BLSS-introduce>>  
+<<制作白龙首饰/@BLSS-make>>
+<<升级白龙首饰/@Craft>>   
+
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+ {<$NPCNAME>/SEAGREEN}  这个名字听说过吗？我更喜欢别人叫我队长！
+我肩膀上的大刀可是有些分量的！哈哈......
+合成白龙首饰及首饰的强化是我的主要工作。
+<<关于白龙首饰/@BLSS-introduce>>  
+<<制作白龙首饰/@BLSS-make>>
+<<升级白龙首饰/@Craft>>  
+
+[@BLSS-introduce]
+#SAY
+700个祝融石碎片可制作一个宝物级白龙首饰，
+以制作好的白龙首饰可以用雪太狼的尖牙来提升其属性。
+<<返回/@Main>>
+
+[@BLSS-make]
+#SAY
+雪白县的野外及洞穴中
+祝融石碎片散落在的每个角落。
+你收集到700个碎片吗？
+<<制作白龙项链/@make-BLXL>>
+<<制作白龙戒指/@make-BLJZ>>
+<<制作白龙手镯/@make-BLSZ>>
+<<返回/@Main>>
+
+[@make-BLXL]
+#SAY
+白龙天坠...听上去都有点很酷的名字
+项链分为5种，根据各个职业量身定制，你选那种？
+<<战士- 白龙天坠(勇猛)/@BLZSXL>>
+<<法师- 白龙天坠(魔性)/@BLFSXL>>
+<<道士- 白龙天坠(仙界)/@BLDSXL>>
+<<刺客- 白龙天坠(机敏)/@BLCKXL>>
+<<弓箭- 白龙天坠(神风)/@BLGJXL>>
+<<返回/@Main>>
+
+[@BLZSXL]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙天坠(勇猛) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLFSXL]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙天坠(魔性) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLDSXL]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙天坠(仙界) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLCKXL]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙天坠(机敏) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLGJXL]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙天坠(神风) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@make-BLJZ]
+#SAY
+白龙眼...听上去都有点很酷的名字
+戒指分为5种，根据各个职业量身定制，你选那种？
+<<战士- 白龙眼(勇猛)/@BLZSJZ>>
+<<法师- 白龙眼(魔性)/@BLFSJZ>>
+<<道士- 白龙眼(仙界)/@BLDSJZ>>
+<<刺客- 白龙眼(机敏)/@BLCKJZ>>
+<<弓箭- 白龙眼(神风)/@BLGJJZ>>
+<<返回/@Main>>
+
+[@BLZSJZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙眼(勇猛) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLFSJZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙眼(魔性) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLDSJZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙眼(仙界) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLCKJZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙眼(机敏) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLGJJZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙眼(神风) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@make-BLSZ]
+#SAY
+白龙昇天...听上去都有点很酷的名字
+手镯分为5种，根据各个职业量身定制，你选那种？
+<<战士- 白龙昇天(勇猛)/@BLZSSZ>>
+<<法师- 白龙昇天(魔性)/@BLFSSZ>>
+<<道士- 白龙昇天(仙界)/@BLDSSZ>>
+<<刺客- 白龙昇天(机敏)/@BLCKSZ>>
+<<弓箭- 白龙昇天(神风)/@BLGJSZ>>
+<<返回/@Main>>
+
+[@BLZSSZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙昇天(勇猛) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLFSSZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙昇天(魔性) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLDSSZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙昇天(仙界) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLCKSZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙昇天(机敏) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@BLGJSZ]
+#IF
+CHECKITEM 祝融石碎片 700
+#ACT
+GIVEITEM 白龙昇天(神风) 1
+TAKEITEM 祝融石碎片 700
+@EXIT
+#ELSEACT
+GOTO @CLBZ
+
+[@CLBZ]
+#SAY
+你没有足够材料!
+不要浪费我的时间，快走吧!
+
+[@Craft]
+#SAY
+选择你需要升级的白龙首饰。
+
+[RECIPE]
+白龙天坠(勇猛)1
+白龙天坠(魔性)1
+白龙天坠(仙界)1
+白龙天坠(机敏)1
+白龙天坠(神风)1
+白龙眼(勇猛)1
+白龙眼(魔性)1
+白龙眼(仙界)1
+白龙眼(机敏)1
+白龙眼(神风)1
+白龙昇天(勇猛)1
+白龙昇天(魔性)1
+白龙昇天(仙界)1
+白龙昇天(机敏)1
+白龙昇天(神风)1
+
+[Quests]
+-177
+178
+-178

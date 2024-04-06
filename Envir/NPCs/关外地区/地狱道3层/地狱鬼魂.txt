@@ -1,0 +1,50 @@
+[@MAIN]
+#IF
+CHECKRANGE 233 78 2
+#ACT
+GOTO @Main-A1
+
+#ELSESAY
+请靠近点，我的灵魂很虚弱听不到你的声音！
+
+[@MAIN-A1]
+#IF
+CHECKEXACTMON 地狱守门人 >= 1 hell03
+#SAY
+杀死地狱守门人来拯救我的灵魂吧！
+ 
+ 
+<关闭/@exit>
+#ELSEACT
+GOTO @Main-A2
+
+[@Main-A2]
+#SAY
+在地狱守门人复活前，我的灵魂暂时得到了安宁。
+前面就是火之河，需要我的帮助吗？
+
+我想渡过 <火之河/@DHtele>
+<下次再来/@exit> 
+
+[@DHtele]
+#SAY
+确认到河对岸?
+ 
+渡过 <火之河/@moveHZH> 
+
+[@moveHZH]
+#IF
+CHECKEXACTMON 地狱守门人 <= 0 hell03
+#ACT
+MOVE hell03 241 70
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+去消灭地狱守门人
+来拯救我的灵魂，快去吧!
+
+<关闭/@exit>
+
+[Quests]

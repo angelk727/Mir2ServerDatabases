@@ -1,0 +1,22 @@
+[@MAIN]
+#SAY
+传送到燃烧昆仑的地下通道吗?
+ 
+<<进入地下通道/@move01UnderPass>>
+<下次再来挑战/@EXIT> 
+
+
+[@move01UnderPass]
+#IF
+CHECKGOLD > 5000
+#ACT
+MOVE Indun_01UnderPass 35 123
+TAKEGOLD 5000
+#ELSEACT
+GOTO @B1
+
+[@B1]
+#SAY
+你没有5000金币，不要浪费我的时间，快走吧!
+ 
+<关闭/@exit>

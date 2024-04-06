@@ -1,0 +1,48 @@
+[@MAIN]
+#IF
+LEVEL > 65
+#SAY
+你好 <$USERNAME> 已经是盛夏了天气变得很闷热了吧？
+我准备了各种各样的清凉活动来参加吧
+要参加酷寒大冒险吗?
+
+<了解活动细节/@KhdkXJ>
+<未知铜币兑换祝福油/@KDHZFY>
+<未知铜币兑换入场券/@KDHRCJ>
+<珍珠兑换入场券/@ZZDHRCJ>
+<关闭/@Exit>
+
+#ELSEACT
+GOTO @Main-1
+
+[@Main-1]
+#SAY
+#SAY
+你好 <$USERNAME>已经是盛夏了天气变得很闷热了吧？
+我准备了各种各样的清凉活动来参加吧
+要参加酷寒大冒险吗?
+
+<了解活动细节/@KhdkXJ>
+<未知铜币兑换祝福油/@KDHZFY>
+<未知铜币兑换入场券/@KDHRCJ>
+<金币兑换入场券/@JBDHRCJ>
+<关闭/@Exit>
+
+[@KhdkXJ]
+#SAY
+除了海量经验
+本次活动可以用 {未知铜币/LightSteelBlue} 兑换特殊物品
+{祝福油/LightSteelBlue} 需要20个 {未知铜币/LightSteelBlue} 
+{酷寒洞窟入场券/LightSteelBlue} 需要20个 {未知铜币/LightSteelBlue}
+65级以下玩家可享受可用金币兑换入场券的福利
+<关闭/@Exit>
+
+
+
+
+
+
+
+
+
+

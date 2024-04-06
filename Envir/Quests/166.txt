@@ -1,0 +1,26 @@
+[@Description]
+去调查梦村县 {沙遗迹 /Yellow} 的怪物 {咒魔剑士/Crimson}
+收集17把 {咒魔剑士的剑/LightSteelBlue} 
+
+[@TaskDescription]
+收集 {咒魔剑士的剑/LightSteelBlue} 交给梦村县光辉团研究员
+
+[@Completion]
+
+[@KillTasks]
+
+[@ItemTasks]
+咒魔剑士的剑 17
+
+[@FlagTasks]
+
+[@CarryItems]
+
+[@FixedRewards]
+
+[@SelectRewards]
+
+[@ExpReward]
+260000000
+
+[@GoldReward]

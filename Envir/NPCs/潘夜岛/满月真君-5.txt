@@ -1,0 +1,23 @@
+[@MAIN]
+#SAY
+我是<$NPCNAME> 你好啊！
+中秋到了还没有吃上松饼，你能给我找一些吗？
+除了新手区域外，其他区域的怪物身上都可以获得。
+
+<<玩一场游戏/@PlayGame/Yellow>>
+<<兑换游戏票据/@DHPiaoJ/Blue>>
+<<强化满月火炬/@QHMyhj/Red>>
+
+
+[@PlayGame]
+#SAY
+活动还未开启！
+
+
+[@DHPiaoJ]
+#SAY
+活动开启后才能兑换票据！
+
+[@QHMyhj]
+#SAY
+我是<$NPCNAME>

@@ -1,0 +1,6 @@
+;;雪之花增加经验：999999
+[@_UseItem(21)]
+#IF
+#ACT
+GIVEEXP 999999
+LocalMessage "经验增加999999点。" Hint
